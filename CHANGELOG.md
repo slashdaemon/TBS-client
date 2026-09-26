@@ -9,6 +9,8 @@ tested only against a local server. Nothing is published.
 
 - **MC 26.1.2 → 26.2**, Fabric Loader 0.19.2 → 0.19.5. `packwiz update --all` repinned every
   entry. All 58 Modrinth pins are tagged for 26.2 and are the newest 26.2 build, as of 2026-09-25.
+- **Paused 2026-09-26 until the next StreamCraft release**, which fixes vanilla-client joins
+  server-side. Both packs get repinned to it in lockstep. See `../RESET-26.2-HANDOFF.md`.
 - **StreamCraft Live 0.19.22 → 0.21.2** (`+mc26.2`), the same version as the server pack.
 - **Shaders:** BSL 10.1.3 → 10.1.8, Complementary Reimagined r5.8 → r5.9.3, and Solas 3.7 → 3.7b.
   **Removed Photon**, which has no 26.2 build: v1.3b renders broken on 26.2. The default shader
