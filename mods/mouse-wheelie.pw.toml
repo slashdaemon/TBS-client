@@ -1,13 +1,13 @@
 name = "Mouse Wheelie (Fabric)"
-filename = "mouse-wheelie-1.16.2+mc26.1.jar"
+filename = "mouse-wheelie-1.16.3+mc26.2.jar"
 side = "client"
 
 [download]
-url = "https://cdn.modrinth.com/data/u5Ic2U1u/versions/rS46R0wu/mouse-wheelie-1.16.2%2Bmc26.1.jar"
+url = "https://cdn.modrinth.com/data/u5Ic2U1u/versions/Vt8Qojph/mouse-wheelie-1.16.3%2Bmc26.2.jar"
 hash-format = "sha512"
-hash = "b109ac9a80313b5d2fe5c1e21b8c171c25a7d8bd65b940ecaa1e18bc6f91a7c98c54f014ac2f953b2a5a32352bd72eeffbc69ffffbfd0400135867967a08bdf6"
+hash = "849c8a3f7032c49eea5ecb27ae09a8eb464f66850ce47c70cf7821031c3b8cdb6fcb2b0492c9abef7cb7aacf3877df7f0c379798cd9c130dc42ed56b75723373"
 
 [update]
 [update.modrinth]
 mod-id = "u5Ic2U1u"
-version = "rS46R0wu"
+version = "Vt8Qojph"

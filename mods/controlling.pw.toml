@@ -1,13 +1,13 @@
 name = "Controlling"
-filename = "Controlling-fabric-26.1.2-26.1.2.3.jar"
+filename = "Controlling-fabric-26.2-26.2.4.jar"
 side = "client"
 
 [download]
-url = "https://cdn.modrinth.com/data/xv94TkTM/versions/He1LyfDP/Controlling-fabric-26.1.2-26.1.2.3.jar"
+url = "https://cdn.modrinth.com/data/xv94TkTM/versions/sZHXONgm/Controlling-fabric-26.2-26.2.4.jar"
 hash-format = "sha512"
-hash = "422c24dd88277b3155df80a23c272ae7c5aaf4d2f616ad76bd832a2a44ddb5ceb854949dbbf2e8596e307a0ef6b55d511fe66e3159476ca7acd6839855f241b1"
+hash = "27147edf57915d88db8d2cbda8a54e97f4dd36bb7379e191d6fec67fe2c42f8f1f96d75a5afc8b84c9177661089ec28f0e89b519321e5d2fcf512a3df27e22c4"
 
 [update]
 [update.modrinth]
 mod-id = "xv94TkTM"
-version = "He1LyfDP"
+version = "sZHXONgm"

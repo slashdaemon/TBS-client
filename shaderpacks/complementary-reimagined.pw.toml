@@ -1,18 +1,17 @@
 name = "Complementary Shaders - Reimagined"
-filename = "ComplementaryReimagined_r5.8.zip"
+filename = "ComplementaryReimagined_r5.9.3.zip"
 side = "client"
 
-[option]
-optional = true
-default = false
-description = "Iris shader pack for high-fidelity lighting. Requires Iris (already included); notable FPS/VRAM cost. Off by default — see README for the labPBR RP Support step."
-
 [download]
-url = "https://cdn.modrinth.com/data/HVnmMxH1/versions/7RRmkxkn/ComplementaryReimagined_r5.8.zip"
+url = "https://cdn.modrinth.com/data/HVnmMxH1/versions/Bqen1mJX/ComplementaryReimagined_r5.9.3.zip"
 hash-format = "sha512"
-hash = "8def9f83ba0015c3d7eadcec1fdb1ecb8ac999496f35d15468bae753c79b26168567e1375218a54fe0c50d97d140555ef26f79dbfcb8b4d526a7d8f3483407bc"
+hash = "45304b1d7862afdb2177b7e6226fc9c6737911d17a4ad46cc9c519ca4deb935f05072cd337cd8b19a15bb8062b57b54eceec7bdee4cd572d94858e2946d37d85"
 
 [update]
 [update.modrinth]
 mod-id = "HVnmMxH1"
-version = "7RRmkxkn"
+version = "Bqen1mJX"
+
+[option]
+optional = true
+description = "Iris shader pack for high-fidelity lighting. Requires Iris (already included); notable FPS/VRAM cost. Off by default — see README for the labPBR RP Support step."

@@ -2,6 +2,28 @@
 
 All notable changes to the TheBlockSurvival client modpack (formerly TBS-Client).
 
+## [2.0.0] — unreleased (draft, branch `reset-26.2`)
+
+**Minecraft 26.2**, in lockstep with TBS-Server 2.0.0, for the world reset. This is a draft,
+tested only against a local server. Nothing is published.
+
+- **MC 26.1.2 → 26.2**, Fabric Loader 0.19.2 → 0.19.5. `packwiz update --all` repinned every
+  entry. All 58 Modrinth pins are tagged for 26.2 and are the newest 26.2 build, as of 2026-09-25.
+- **StreamCraft Live 0.19.22 → 0.21.2** (`+mc26.2`), the same version as the server pack.
+- **Shaders:** BSL 10.1.3 → 10.1.8, Complementary Reimagined r5.8 → r5.9.3, and Solas 3.7 → 3.7b.
+  **Removed Photon**, which has no 26.2 build: v1.3b renders broken on 26.2. The default shader
+  had pointed at `BSL_v10.1.3.zip`, a file that no longer exists, so no shader loaded on first
+  launch. It now points at `BSL_v10.1.8.zip`.
+- **Resource packs:** Patrix now uses its 26.2 build. Fresh Animations Extensions v1.9 → v1.9.2;
+  the default-on list named the old file, so Extensions was never enabled, and that's fixed.
+  **Removed the standalone Fresh Animations: Emissive**, because Extensions already includes it.
+- **Known gap: Vanilla Tweaks** (bundled `resourcepacks/VanillaTweaks.zip`) is still the 26.1
+  build (pack format 84; 26.2 is 88), so it doesn't load. It has to be downloaded again from
+  vanillatweaks.net with the same 10 tweaks (see `credits.txt`).
+- Known noise: WTHIT's JEI plugin entrypoint fails to load (a ClassNotFoundException in WTHIT's JEI
+  integration). A background thread keeps the game from exiting cleanly on quit, which ends in a
+  shutdown-watchdog crash after you leave. Its owner hasn't been identified yet.
+
 ## [1.5.0] — 2026-09-07
 
 **StreamCraft Live 0.17.4 → 0.19.22.** Lockstep release with TBS-Server 1.5.0 — run the
