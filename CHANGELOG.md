@@ -17,9 +17,9 @@ tested only against a local server. Nothing is published.
 - **Resource packs:** Patrix now uses its 26.2 build. Fresh Animations Extensions v1.9 → v1.9.2;
   the default-on list named the old file, so Extensions was never enabled, and that's fixed.
   **Removed the standalone Fresh Animations: Emissive**, because Extensions already includes it.
-- **Known gap: Vanilla Tweaks** (bundled `resourcepacks/VanillaTweaks.zip`) is still the 26.1
-  build (pack format 84; 26.2 is 88), so it doesn't load. It has to be downloaded again from
-  vanillatweaks.net with the same 10 tweaks (see `credits.txt`).
+- **Vanilla Tweaks rebuilt for 26.2.** It's the same 10 tweaks, regenerated through
+  vanillatweaks.net (`VanillaTweaks_r737292_MC26.2.x`, pack formats 84–97). The 26.1 zip it
+  replaces used pack format 84 only, so it didn't load on 26.2.
 - Known noise: WTHIT's JEI plugin entrypoint fails to load (a ClassNotFoundException in WTHIT's JEI
   integration). A background thread keeps the game from exiting cleanly on quit, which ends in a
   shutdown-watchdog crash after you leave. Its owner hasn't been identified yet.

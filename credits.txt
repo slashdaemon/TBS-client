@@ -5,7 +5,7 @@ Vanilla Tweaks  (https://vanillatweaks.net)
 -------------------------------------------
 This modpack bundles a curated Vanilla Tweaks resource pack
 (resourcepacks/VanillaTweaks.zip), generated from vanillatweaks.net for
-Minecraft 26.1 and shipped as part of The Block Survival's larger resource-pack
+Minecraft 26.2 and shipped as part of The Block Survival's larger resource-pack
 stack (Fresh Animations, Patrix, Complementary shaders) and mod configuration.
 
 Included Vanilla Tweaks packs:

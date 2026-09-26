@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = "CHANGELOG.md"
-hash = "4cb23eca364649af443c0439751dd19a76b5c05800568f98226f10464ae1dede"
+hash = "e5a396900c474325aa7289457f25d9d0b42631b4e4dd81e6d552e92217f8c66b"
 
 [[files]]
 file = "README.md"
@@ -34,7 +34,7 @@ hash = "6d3677be841a8be87a3b44aacbb3cba4db1912a58a6e8c15ce30c002b3f8363f"
 
 [[files]]
 file = "credits.txt"
-hash = "9df556bd1301c8da9c5a47754576e2c0a1790f21f937fb19ec56540b4d92a047"
+hash = "c89a193076c018324544eb2067be5fe7a19d59767cd0d5ad7ab380ad885b6961"
 
 [[files]]
 file = "docs/MOD_LIST.md"
@@ -305,7 +305,7 @@ metafile = true
 
 [[files]]
 file = "resourcepacks/VanillaTweaks.zip"
-hash = "fe378e897bbfe161154ffd5b19d3cbf78d35722ffb9408fffa3582ccf31a6b18"
+hash = "7cf9308cae2c44c6c1e90db50ce3faf70e3fd3a2af8701ec842c7498d29ae765"
 
 [[files]]
 file = "resourcepacks/fresh-animations-extensions.pw.toml"
