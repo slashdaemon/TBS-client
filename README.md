@@ -47,7 +47,7 @@ resolved state of every mod, and `docs/TBS-mod-strategy.md` for the full design 
 - **Tier 3 — Camera, controls, animations:** Camera Utils, Zoomify, Not Enough Animations,
   First-person Model, Skin Layers 3D, Smooth Swapping, Bridging Mod
 - **Tier 4 — HUD, UI, utility:** BetterF3, Mod Menu, Cloth Config + YACL, AppleSkin, WTHIT,
-  JEI, Paginated Advancements, Mouse Wheelie, Controlling, Status Effect Bars,
+  JEI, Paginated Advancements, Controlling, Status Effect Bars,
   Crash Assistant, Blur+, Open Parties and Claims (claim/party UI + Xaero map overlay;
   menu key defaults to `;`), Xaero's Minimap + Xaero's World Map (entity radar + cave
   maps off by default)
@@ -113,6 +113,7 @@ will be added once builds appear:
 - **Eating Animation** — visual eating
 - **InvMove** — walk while inventory is open
 - **Auto HUD** — hide HUD on demand
+- **Mouse Wheelie** — removed in 2.0.0 until the fix for its non-daemon thread ships (mouse-wheelie#291 / PR #292); it blocked clean exit
 
 `Voxy World Gen V2` from the doc is not a separate project — Voxy's V2 world generation is a
 setting inside Voxy's own config, enabled in-game.

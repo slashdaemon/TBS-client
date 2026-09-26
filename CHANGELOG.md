@@ -20,9 +20,15 @@ tested only against a local server. Nothing is published.
 - **Vanilla Tweaks rebuilt for 26.2.** It's the same 10 tweaks, regenerated through
   vanillatweaks.net (`VanillaTweaks_r737292_MC26.2.x`, pack formats 84–97). The 26.1 zip it
   replaces used pack format 84 only, so it didn't load on 26.2.
+- **Removed Mouse Wheelie** (pending). Its `InteractionManager` runs on a non-daemon scheduled
+  thread (`pool-4-thread-1`, identified with JFR), which keeps the JVM alive on quit. Minecraft's
+  shutdown watchdog then crashes the game after every exit, and Crash Assistant shows its dialog.
+  This is a known upstream bug:
+  [mouse-wheelie#291](https://github.com/Siphalor/mouse-wheelie/issues/291), with the fix in
+  [PR #292](https://github.com/Siphalor/mouse-wheelie/pull/292), not yet released. Add it back
+  once a fixed build is out.
 - Known noise: WTHIT's JEI plugin entrypoint fails to load (a ClassNotFoundException in WTHIT's JEI
-  integration). A background thread keeps the game from exiting cleanly on quit, which ends in a
-  shutdown-watchdog crash after you leave. Its owner hasn't been identified yet.
+  integration). WTHIT itself works.
 
 ## [1.5.0] — 2026-09-07
 

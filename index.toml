@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = "CHANGELOG.md"
-hash = "e5a396900c474325aa7289457f25d9d0b42631b4e4dd81e6d552e92217f8c66b"
+hash = "9a97333bd8034416d8f0f44ebe3e58a284654243c3f0917441a560c425cb9095"
 
 [[files]]
 file = "README.md"
@@ -206,11 +206,6 @@ metafile = true
 [[files]]
 file = "mods/modmenu.pw.toml"
 hash = "dc9906e45919f5b3a31e3d5582cd97bdd7534f56c2a5e730b9de41875a97e1eb"
-metafile = true
-
-[[files]]
-file = "mods/mouse-wheelie.pw.toml"
-hash = "f21fec6539df11399bec356032c59c731375e80f99aef10386a1aafa2aebc252"
 metafile = true
 
 [[files]]
