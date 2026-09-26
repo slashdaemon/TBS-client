@@ -1,0 +1,13 @@
+name = "Clearer Slot Highlight"
+filename = "Clearer Slot Highlight.zip"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/NITh4Uod/versions/IEYjKwQ1/Clearer%20Slot%20Highlight.zip"
+hash-format = "sha512"
+hash = "75929a868f608e0cc40590d208e0160f6e4aa72815b7ff949b41c4879f85d427c3f465790bd4f154f5c94fd7f82adfd9e59557e0c65f05536be0fd85b00c2743"
+
+[update]
+[update.modrinth]
+mod-id = "NITh4Uod"
+version = "IEYjKwQ1"

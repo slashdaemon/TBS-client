@@ -2,11 +2,11 @@ hash-format = "sha256"
 
 [[files]]
 file = "CHANGELOG.md"
-hash = "9a97333bd8034416d8f0f44ebe3e58a284654243c3f0917441a560c425cb9095"
+hash = "a149be60ca7e2d327437506c8e66e17ef7034846e6418f607c752969a219dd5a"
 
 [[files]]
 file = "README.md"
-hash = "bbdcd599fe672a9167446c13f16f881cd9e90f0db456b451961ac560f82bb061"
+hash = "5b8a76b3c7d6c7d589749a6f394ce531f2701ee5c12f183a4d4e3a86ec42cf63"
 
 [[files]]
 file = "config/defaultoptions/extra/config/iris.properties"
@@ -30,7 +30,7 @@ hash = "37768700ab4a6a638509e168029fffe787f724137a0b3dcc1b5852bf08c0e7b6"
 
 [[files]]
 file = "config/defaultoptions/options.txt"
-hash = "6d3677be841a8be87a3b44aacbb3cba4db1912a58a6e8c15ce30c002b3f8363f"
+hash = "5347b3335080de07057338c94515d68bcf14db34762dd002a5d82f1c7cf85491"
 
 [[files]]
 file = "credits.txt"
@@ -214,6 +214,16 @@ hash = "00bb7b173be4ead135663449c2cc50036b1ff24ad1c164ba56fda9e3c3f60c8c"
 metafile = true
 
 [[files]]
+file = "mods/nuit-interop.pw.toml"
+hash = "04e1cca926a53664d30bba45ab97784b0e56153c0c8e65492b2ca0ac161fa53c"
+metafile = true
+
+[[files]]
+file = "mods/nuit.pw.toml"
+hash = "29cfef3c22fd68af9c7bfda35084838e85742f920910d7a1a5372df70039afae"
+metafile = true
+
+[[files]]
 file = "mods/open-parties-and-claims.pw.toml"
 hash = "4ed66f3cdcc825397cc16b094cc2aa23eaf768ae766b25cfd2926c783a3cd638"
 metafile = true
@@ -303,6 +313,41 @@ file = "resourcepacks/VanillaTweaks.zip"
 hash = "7cf9308cae2c44c6c1e90db50ce3faf70e3fd3a2af8701ec842c7498d29ae765"
 
 [[files]]
+file = "resourcepacks/als-creepers-revamped.pw.toml"
+hash = "ecef1b0a746d95a37732b62387b5dd68c6021cfdff4a39f70d5974bc88d833d3"
+metafile = true
+
+[[files]]
+file = "resourcepacks/als-enderman-revamped-x-fresh-animations.pw.toml"
+hash = "0cebc7aeb53c8958b30016e05bfca498179994a76cd82a334e5062644c43e26e"
+metafile = true
+
+[[files]]
+file = "resourcepacks/als-skeletons-revamped-x-fresh-animations.pw.toml"
+hash = "22bec2ae03e0e7e23eb9c394ea0ba6c6c4aa8562c83245cfa3737e3c1e250b9d"
+metafile = true
+
+[[files]]
+file = "resourcepacks/better-lanterns.pw.toml"
+hash = "0ed505596b02487c4eeceb55a0146fc00edb90fb5a928059143aaa72a8cf7ff4"
+metafile = true
+
+[[files]]
+file = "resourcepacks/clearer-slot-highlight.pw.toml"
+hash = "292fa6146005ccb378709fe31dcf741ed7ebc59c77f613d1ca3f9202c11b804a"
+metafile = true
+
+[[files]]
+file = "resourcepacks/dramatic-skys.pw.toml"
+hash = "8f967b7e600898db0ee79dedf76eb5969df6c7ccec87f0b708445eed99ea8268"
+metafile = true
+
+[[files]]
+file = "resourcepacks/fa-player-extension.pw.toml"
+hash = "2e1a6866e4366cebe200dcf71ab52923b7653f76dc48741b93411ee3bf77372a"
+metafile = true
+
+[[files]]
 file = "resourcepacks/fresh-animations-extensions.pw.toml"
 hash = "57121d2c4524e24dc2c9037e1f95f6f2af51882b58f04c5a1c2995832d7d0538"
 metafile = true
@@ -313,8 +358,48 @@ hash = "010806d9434f5a8ebf4d3dded93eac4ad8427fd73f494df92fabf198377895b9"
 metafile = true
 
 [[files]]
+file = "resourcepacks/fresh-skeleton-physics.pw.toml"
+hash = "4724428301a686601b7452593c5af174f29b2aed8b7604da5e6b870782f18437"
+metafile = true
+
+[[files]]
+file = "resourcepacks/gentler-weather-sounds.pw.toml"
+hash = "ee16d89388c43322e39f55d4054cd9077a5d421ed34b47b689643c38854e96f5"
+metafile = true
+
+[[files]]
+file = "resourcepacks/glowing-glints.pw.toml"
+hash = "6977010fe4f8385fbba0f022d4289ca474848b17b9f0b917b606499c467477cc"
+metafile = true
+
+[[files]]
+file = "resourcepacks/icons.pw.toml"
+hash = "ebba2a571a5a4a50341b0c6aab8a4b8a84a1fc68a7d5aa6ddaf4f85a0c91eb5b"
+metafile = true
+
+[[files]]
+file = "resourcepacks/mb3d-items-pack.pw.toml"
+hash = "bb4973a8d4536ed30eed751d5dbffd995631dc3d4dcc36a4c5e00da223957a85"
+metafile = true
+
+[[files]]
 file = "resourcepacks/patrix-32x.pw.toml"
 hash = "4338032c8d089cf9ccd4e3d50416373ca4e5ca52efbe0430bcd7ab7c8e9d48c6"
+metafile = true
+
+[[files]]
+file = "resourcepacks/rays-3d-ladders.pw.toml"
+hash = "e6669c7db8764e4fbf205202829baa10e1d68168ca63f9c290bf87a631fe7173"
+metafile = true
+
+[[files]]
+file = "resourcepacks/rays-3d-rails.pw.toml"
+hash = "860dbea88df166cff174585d2c535105b0ca7910af90d9b706501e0b1e9ba245"
+metafile = true
+
+[[files]]
+file = "resourcepacks/unique-dark.pw.toml"
+hash = "ef29ab42be9a4f9090fe0589045d479dd02c05d54f5540d95166f9dc9dbba3df"
 metafile = true
 
 [[files]]

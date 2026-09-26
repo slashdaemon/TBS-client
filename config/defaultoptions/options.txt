@@ -1,4 +1,4 @@
-resourcePacks:["vanilla","fabric","file/VanillaTweaks.zip","file/FreshAnimations_v1.10.5.zip","file/FA+All_Extensions-v1.9.2.zip"]
+resourcePacks:["vanilla","fabric","file/VanillaTweaks.zip","file/FreshAnimations_v1.10.5.zip","file/FA+All_Extensions-v1.9.2.zip","file/Fresh Skeleton Physics.zip","file/AL's Skeletons Revamped+FA 2.0.zip","file/AL's Enderman Revamped+FA 2.0.zip","file/AL's Creepers Revamped 2.0.zip","file/FA+Player-v1.1.zip","file/Better Lanterns v1.4.0 - 26.2+26.3.zip","file/RAYs_3D_Rails_v3.5.zip","file/RAYs_3D_Ladders_v2.4.zip","file/MB-3D Items Pack 2.4.0.zip","file/Enchantment Outlines.zip","file/Unique Dark - Lite - 1.20.2-26.x.zip","file/Clearer Slot Highlight.zip","file/Gentler Weather Sounds 2.3.0.zip","file/Dramatic Skys Demo 1.5.3.36.6.zip","file/Icons v.1.14.zip"]
 incompatibleResourcePacks:[]
 renderDistance:32
 simulationDistance:32
