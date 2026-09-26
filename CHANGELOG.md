@@ -35,7 +35,7 @@ tested only against a local server. Nothing is published.
 
   Patrix 32x stays optional and off by default, because the SlashSlabs grass slabs are 16x and
   look flat next to Patrix's 32x grass.
-- **Added Nuit + Nuit Interop** (both beta on 26.2): custom-skybox support that Dramatic Skys needs.
+- **Added Nuit + Nuit Interop** (both beta on 26.2; Nuit pinned to beta.5, because Interop beta.5 requires exactly that version): custom-skybox support that Dramatic Skys needs.
   Default Options only seeds a fresh install, so existing players have to enable the new packs
   once by hand; the release notes need to say so.
 - **Removed Mouse Wheelie** (pending). Its `InteractionManager` runs on a non-daemon scheduled

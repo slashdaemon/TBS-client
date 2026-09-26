@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = "CHANGELOG.md"
-hash = "a149be60ca7e2d327437506c8e66e17ef7034846e6418f607c752969a219dd5a"
+hash = "167b37505cf15ca9a38e2675693ee9c7b2b84a524049e872387f642d0743528e"
 
 [[files]]
 file = "README.md"
@@ -220,7 +220,7 @@ metafile = true
 
 [[files]]
 file = "mods/nuit.pw.toml"
-hash = "29cfef3c22fd68af9c7bfda35084838e85742f920910d7a1a5372df70039afae"
+hash = "8be6e9e28fb59a556705cc4c3e327fb555afb7252b612b4607c3b00787b7b824"
 metafile = true
 
 [[files]]
