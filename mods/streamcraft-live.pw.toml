@@ -1,13 +1,13 @@
 name = "StreamCraft Live"
-filename = "streamcraft-0.21.2+mc26.2.jar"
+filename = "streamcraft-pc-0.25.0+mc26.2.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/UUUunIAe/versions/OWTJdkd9/streamcraft-0.21.2%2Bmc26.2.jar"
+url = "https://cdn.modrinth.com/data/UUUunIAe/versions/54eiCrrZ/streamcraft-pc-0.25.0%2Bmc26.2.jar"
 hash-format = "sha512"
-hash = "329bdfbda2bc2a010316167f6f01e2a08e966ded85f918a556a4d85899f9f35466e4a3aab9a23de6be95fe8ec44487fee5e4c27acc276e1009575e380109e3ec"
+hash = "1b96b0516974914a445f33647f10879ed2141c20c27ece58fb2764bee2c8972087a20aa28c92839ff6d7f2e9cb4ccce496363d88f8319efdd0f79edc3868b262"
 
 [update]
 [update.modrinth]
 mod-id = "UUUunIAe"
-version = "OWTJdkd9"
+version = "54eiCrrZ"

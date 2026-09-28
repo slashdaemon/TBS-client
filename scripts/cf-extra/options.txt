@@ -7,3 +7,4 @@ soundCategory_ambient:0.2
 key_gui.xaero_pac_key_open_menu:key.keyboard.semicolon
 key_iris.keybind.toggleShaders:key.keyboard.unknown
 key_iris.keybind.reload:key.keyboard.unknown
+preferredGraphicsBackend:"opengl"

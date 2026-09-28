@@ -4,3 +4,4 @@ renderDistance:32
 simulationDistance:32
 guiScale:3
 soundCategory_ambient:0.2
+preferredGraphicsBackend:"opengl"

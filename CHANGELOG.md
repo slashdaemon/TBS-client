@@ -9,9 +9,18 @@ tested only against a local server. Nothing is published.
 
 - **MC 26.1.2 → 26.2**, Fabric Loader 0.19.2 → 0.19.5. `packwiz update --all` repinned every
   entry. All 58 Modrinth pins are tagged for 26.2 and are the newest 26.2 build, as of 2026-09-25.
-- **Paused 2026-09-26 until the next StreamCraft release**, which fixes vanilla-client joins
-  server-side. Both packs get repinned to it in lockstep. See `../RESET-26.2-HANDOFF.md`.
-- **StreamCraft Live 0.19.22 → 0.21.2** (`+mc26.2`), the same version as the server pack.
+- **StreamCraft Live 0.19.22 → 0.25.0** (`+mc26.2`, Modrinth `54eiCrrZ`), the same version as
+  the server pack. 0.25.0 is the release that lets stock vanilla clients join a 26.2 Fabric
+  server. Its jars are now named system-first (`pc`, `mac-arm64`, `mac-x64`, `linux-x64`,
+  `linux-arm64`), so the per-OS overlays in `scripts/platform-sources/` moved to the matching
+  0.25.0 files (they were still on 0.19.22+mc26.1.2), and the CurseForge swap points at CF file
+  `8986384`. Protocol 8: older StreamCraft clients get the version-mismatch message.
+- **OpenGL is pinned as the graphics backend** (`preferredGraphicsBackend:"opengl"`, in both
+  the Default Options seed and the CurseForge `options.txt`). 26.2's Vulkan backend crashes this
+  pack on the first frame: Iris is OpenGL-only and never sets up its sampler state under Vulkan,
+  and Voxy calls into it anyway (`NullPointerException` on `IrisRenderSystem.samplers`). Like
+  every seeded default, this only applies on a fresh install, and a player can still switch to
+  Vulkan in Video Settings and hit the crash.
 - **Shaders:** BSL 10.1.3 → 10.1.8, Complementary Reimagined r5.8 → r5.9.3, and Solas 3.7 → 3.7b.
   **Removed Photon**, which has no 26.2 build: v1.3b renders broken on 26.2. The default shader
   had pointed at `BSL_v10.1.3.zip`, a file that no longer exists, so no shader loaded on first
