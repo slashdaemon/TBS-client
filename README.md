@@ -9,8 +9,8 @@ Any player on stock vanilla 26.1.2 (+ StreamCraft) gets the full gameplay experi
 world, items, shops, mail, and progression. This pack exists for players who want to dial in
 visual fidelity, performance, and quality-of-life for long survival sessions.
 
-Every mod here is safe against a vanilla server. One mod — **StreamCraft Live** — is
-shared with TBS-Server; it is optional per player, so a vanilla client without it still
+Every mod here is safe against a vanilla server. Two mods — **StreamCraft Live** and
+**SlashRails** — are shared with TBS-Server; both are optional per player, so a vanilla client without them still
 connects and plays the full game (see the cross-side contract in
 `docs/TBS-mod-strategy.md`).
 
@@ -51,7 +51,7 @@ resolved state of every mod, and `docs/TBS-mod-strategy.md` for the full design 
   Crash Assistant, Blur+, Open Parties and Claims (claim/party UI + Xaero map overlay;
   menu key defaults to `;`), Xaero's Minimap + Xaero's World Map (entity radar + cave
   maps off by default)
-- **Tier 5 — Cross-side:** StreamCraft Live
+- **Tier 5 — Cross-side:** StreamCraft Live, SlashRails
 
 ## Resource packs & shader
 

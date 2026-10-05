@@ -1,0 +1,13 @@
+name = "SlashRails"
+filename = "slashrails-0.3.0+mc26.2-fabric.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "479e71ae8d0c1023c75b2bb083bad5bc801dad97"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 9074684
+project-id = 1703126

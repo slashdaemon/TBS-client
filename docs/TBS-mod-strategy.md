@@ -40,8 +40,8 @@ No player tier sees less *content* than another. The difference is **how it look
 ### The cross-side contract
 
 - The base server is **vanilla 26.1.2**.
-- **StreamCraft Live is the only mod required on both sides.** It is shipped in both packs at the same version, upgraded synchronously.
-- No other mod appears in both packs. No other mod requires both sides to function.
+- **StreamCraft Live and SlashRails are the only mods shipped on both sides** (SlashRails from 2.0.0). Each is in both packs at the same version, upgraded synchronously, and each is optional per player.
+- No other mod appears in both packs. No mod requires both sides to function: SlashRails' server-only build lets vanilla clients join and ride its curves.
 - Any client running stock vanilla 26.1.2 + StreamCraft can connect and play.
 - Any server-side gameplay augment must be invisible to vanilla clients at the protocol level — see Polymer below.
 
@@ -108,6 +108,7 @@ For TBS-Server to add features without breaking the vanilla-client contract, eve
 
 ### Tier 5 — Cross-side
 - **StreamCraft Live** — required on both client and server. Same jar version as the server pack.
+- **SlashRails** — draws smoothed rail runs as curved track. Same jar version as the server pack; optional (without it, curves ride smoothly but look like vanilla rails).
 
 ### Explicitly excluded from TBS-Client
 - Any content mod that adds blocks / items / entities (Macaw's, Supplementaries, Farmer's Delight, etc.) — would desync with a vanilla server
@@ -166,6 +167,7 @@ For TBS-Server to add features without breaking the vanilla-client contract, eve
 
 ### Tier S7 — Cross-side
 - **StreamCraft Live** — identical jar in both TBS-Server and TBS-Client packs
+- **SlashRails** — identical jar in both packs. Server-only build: the Track Smoother turns rail staircases into smooth curves that vanilla minecarts ride; it reaches vanilla clients through Polymer.
 
 ### Explicitly excluded from TBS-Server
 - All content mods that register new blocks / items / entities without Polymer (Macaw's, Supplementaries, Farmer's Delight, etc.) — would break vanilla-client joinability

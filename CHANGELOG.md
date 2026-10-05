@@ -15,6 +15,11 @@ tested only against a local server. Nothing is published.
   system-first (`pc`, `mac-arm64`, `mac-x64`, `linux-x64`, `linux-arm64`), and the per-OS overlays
   in `scripts/platform-sources/` point at the matching 0.28.6 files. The CurseForge swap points at
   CF file `9066807`. Protocol 8: older StreamCraft clients get the version-mismatch message.
+- **SlashRails 0.3.0** (`+mc26.2`, CurseForge file `9074684`), new, in both packs at the same
+  version (the second cross-side mod after StreamCraft Live). The Track Smoother turns rail
+  staircases into smooth curves that vanilla minecarts ride. Its 26.2 Fabric jar is a server-only
+  build: vanilla clients join, use the tool through Polymer and ride the curves; TBS-Client
+  players also see the curved track.
 - **OpenGL is pinned as the graphics backend** (`preferredGraphicsBackend:"opengl"`, in both
   the Default Options seed and the CurseForge `options.txt`). 26.2's Vulkan backend crashes this
   pack on the first frame: Iris is OpenGL-only and never sets up its sampler state under Vulkan,

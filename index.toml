@@ -2,11 +2,11 @@ hash-format = "sha256"
 
 [[files]]
 file = "CHANGELOG.md"
-hash = "e71b91309a2fe0052a8ba1d7b7e1235ed51e6c839686bd1640fe61f9cd55f8d8"
+hash = "825f1c9a1e328332dcfbb78c5b63a80450bec25fa583feca8f7946c36a3ee093"
 
 [[files]]
 file = "README.md"
-hash = "5b8a76b3c7d6c7d589749a6f394ce531f2701ee5c12f183a4d4e3a86ec42cf63"
+hash = "d7db766f303cedb4fcdee73c38e4e6f2b3b8deec456fc4610524bd3cc81ea5d1"
 
 [[files]]
 file = "config/defaultoptions/extra/config/iris.properties"
@@ -42,7 +42,7 @@ hash = "8345978c9c570d39209776b954d442c4377c60b00262c2cd04237c254f902831"
 
 [[files]]
 file = "docs/TBS-mod-strategy.md"
-hash = "b2ec1e703b592d0a9fa5394ff82905ff6c7bf5ec61e66236d896cb5653162368"
+hash = "bb48072adbe245aa87adb77ad449ffa31eac3ab86fa6bdc144f7f436a93a355c"
 
 [[files]]
 file = "docs/resource-packs.md"
@@ -145,7 +145,7 @@ metafile = true
 
 [[files]]
 file = "mods/fabric-api.pw.toml"
-hash = "14f8e97b4d1c9e151848bd63ff0ed233c22a801420647ed4a02853e95ecdbea2"
+hash = "3b615694b633006198041ee97429408f2325e81b63f8d2778188d60204e6b7a1"
 metafile = true
 
 [[files]]
@@ -236,6 +236,11 @@ metafile = true
 [[files]]
 file = "mods/searchables.pw.toml"
 hash = "301928b6a78274568323922fd2b4b43205fd95eba5ce369a33d0cdbc724d2ca2"
+metafile = true
+
+[[files]]
+file = "mods/slashrails.pw.toml"
+hash = "446f763361998b891cfdb5d936ca489d2670df087830591cafd8c39f6ce96c3d"
 metafile = true
 
 [[files]]
