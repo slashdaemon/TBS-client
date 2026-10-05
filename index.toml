@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = "CHANGELOG.md"
-hash = "71f4749fd29a7278549a5319dadc87b4d5185d58e4242f8e20de15e40f970945"
+hash = "e71b91309a2fe0052a8ba1d7b7e1235ed51e6c839686bd1640fe61f9cd55f8d8"
 
 [[files]]
 file = "README.md"
@@ -260,7 +260,7 @@ metafile = true
 
 [[files]]
 file = "mods/streamcraft-live.pw.toml"
-hash = "af5192679927f8e5ea90acf7a9a248456a50a31ef85f99eeaefb4d737b45f1b2"
+hash = "d5230f5b31ad39a344f964fe8acbfa02925e40e20a112cd3ca48a0bc31eaf1e1"
 metafile = true
 
 [[files]]
