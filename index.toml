@@ -6,7 +6,7 @@ hash = "f8641fc95fe896137ef5f0bfbf3f9ce8ba192267d4aebefd9cbc47049fe09dd2"
 
 [[files]]
 file = "README.md"
-hash = "84eee6926be1ee541fe680ac30a07e0d5c6212dbaa704f6e788a43c8c0b9c9c4"
+hash = "924f9a8c7c0a16a2e05902bff1f986b5c6b3cb1b937e8f2e05bbad4c1d9ba7b4"
 
 [[files]]
 file = "config/defaultoptions/extra/config/iris.properties"

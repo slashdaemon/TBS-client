@@ -10,13 +10,16 @@ This file is maintainer-only — it is excluded from the distributed pack via
 produces **five** artifacts per platform — one per OS, because StreamCraft Live
 ships per-OS native libraries that can't ride together in a single pack file:
 
-| Variant | Modrinth artifact | CurseForge artifact |
+| Variant | Prism artifact (GitHub release) | CurseForge artifact |
 |---------|-------------------|---------------------|
-| Windows *(primary)* | `TheBlockSurvival-X.Y.Z.mrpack` | `TheBlockSurvival-X.Y.Z.zip` |
-| Linux | `…-linux.mrpack` | `…-linux.zip` |
-| Linux ARM64 | `…-linux-aarch64.mrpack` | `…-linux-aarch64.zip` |
-| macOS Apple Silicon | `…-macos-arm64.mrpack` | `…-macos-arm64.zip` |
-| macOS Intel | `…-macos-x86_64.mrpack` | `…-macos-x86_64.zip` |
+| Windows *(primary)* | `TheBlockSurvival-pc-X.Y.Z.mrpack` | `TheBlockSurvival-pc-X.Y.Z.zip` |
+| Linux | `TheBlockSurvival-linux-x64-X.Y.Z.mrpack` | `TheBlockSurvival-linux-x64-X.Y.Z.zip` |
+| Linux ARM64 | `TheBlockSurvival-linux-arm64-X.Y.Z.mrpack` | `TheBlockSurvival-linux-arm64-X.Y.Z.zip` |
+| macOS Apple Silicon | `TheBlockSurvival-mac-arm64-X.Y.Z.mrpack` | `TheBlockSurvival-mac-arm64-X.Y.Z.zip` |
+| macOS Intel | `TheBlockSurvival-mac-x64-X.Y.Z.mrpack` | `TheBlockSurvival-mac-x64-X.Y.Z.zip` |
+
+Names match StreamCraft's system labels (`pc`, `mac-arm64`, `mac-x64`, `linux-x64`,
+`linux-arm64`) since 2.0.0; earlier releases used `TheBlockSurvival-X.Y.Z[-<os>]`.
 
 ```bash
 pip install -r scripts/requirements.txt        # requests + markdown
@@ -277,7 +280,7 @@ CurseForge-hosted project will be rejected**, so audit the exported zip before
 every CF upload:
 
 ```bash
-python -c "import zipfile;z=zipfile.ZipFile('dist/TheBlockSurvival-<ver>.zip');\
+python -c "import zipfile;z=zipfile.ZipFile('dist/TheBlockSurvival-pc-<ver>.zip');\
 print([n for n in z.namelist() if n.startswith('overrides/') and n.lower().endswith(('.jar','.zip'))])"
 ```
 

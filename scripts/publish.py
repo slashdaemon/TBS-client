@@ -110,6 +110,22 @@ DEFAULT_VARIANT = "windows"  # canonical pack ≡ Windows; no swap needed for th
 PLATFORM_SOURCES_DIR = "scripts/platform-sources"
 
 
+# System labels in artifact names, matching StreamCraft's jars (streamcraft-pc-…, -mac-arm64-…):
+# TheBlockSurvival-<system>-<version>.zip / .mrpack. Windows is the primary download.
+SYSTEM_LABELS = {
+    "windows": "pc",
+    "macos-arm64": "mac-arm64",
+    "macos-x86_64": "mac-x64",
+    "linux": "linux-x64",
+    "linux-aarch64": "linux-arm64",
+}
+
+
+def artifact_name(version: str, variant: str, ext: str) -> str:
+    """e.g. TheBlockSurvival-pc-2.0.0.zip, TheBlockSurvival-mac-arm64-2.0.0.mrpack."""
+    return f"TheBlockSurvival-{SYSTEM_LABELS[variant]}-{version}.{ext}"
+
+
 def variant_suffix(variant: str) -> str:
     """Filename suffix for a variant. Windows is the primary download and ships
     without a classifier suffix (matching the StreamCraft convention)."""
@@ -976,9 +992,9 @@ def main() -> int:
     for v in variants:
         suf = variant_suffix(v)
         if do_modrinth:
-            mrpacks.append(dist / f"TheBlockSurvival-{version}{suf}.mrpack")
+            mrpacks.append(dist / artifact_name(version, v, "mrpack"))
         if do_curseforge:
-            cf_zips.append(dist / f"TheBlockSurvival-{version}{suf}.zip")
+            cf_zips.append(dist / artifact_name(version, v, "zip"))
 
     # ---- export -----------------------------------------------------------
     if not args.no_export:
@@ -1006,7 +1022,7 @@ def main() -> int:
                   f"variant; got --variant {args.variant!r}. Per-OS variants are "
                   f"GitHub-release-only.")
             return 1
-        primary_mrpack = dist / f"TheBlockSurvival-{version}.mrpack"
+        primary_mrpack = dist / artifact_name(version, DEFAULT_VARIANT, "mrpack")
         if not primary_mrpack.exists():
             raise SystemExit(f"ERR: {primary_mrpack} not found (run without --no-export)")
         token = os.environ.get("MODRINTH_TOKEN", "")

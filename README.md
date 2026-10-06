@@ -19,7 +19,7 @@ without them still connects and plays the full game (see the cross-side contract
 
 | Launcher | How |
 |----------|-----|
-| Prism Launcher | Import the `TheBlockSurvival-X.Y.Z.mrpack` release file |
+| Prism Launcher | Import the `TheBlockSurvival-<system>-X.Y.Z.mrpack` release file (`pc`, `mac-arm64`, `mac-x64`, `linux-x64` or `linux-arm64`) |
 | CurseForge App | Import the exported `.zip` |
 
 ## Build / maintenance
