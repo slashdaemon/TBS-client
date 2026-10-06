@@ -88,6 +88,16 @@ safe to assume work.
 distribution (error mentions "manual download"). Fix: re-source that mod from Modrinth —
 delete its `.pw.toml`, `mr install` it — so the `.mrpack` can embed it by URL.
 
+## The two builds differ (remember this)
+
+- **Far terrain:** the Prism/`.mrpack` build ships **Voxy**; the CurseForge `.zip` ships
+  **Distant Horizons** (`scripts/cf-extra/mods/distant-horizons.pw.toml`), because Voxy isn't on
+  CurseForge. Never ship both in one build.
+- **CurseForge leaves out** (`CURSEFORGE_EXCLUDED` in `scripts/publish.py`): Voxy, Fresh
+  Animations and its add-ons, and resource packs with no 26.2 file on CurseForge.
+- **Every CurseForge swap must be the Prism build's exact file** (and the server's exact file for
+  cross-side mods); `publish.py` refuses stale, orphan or server-mismatched swaps.
+
 ## Distribution
 
 TBS-Client is published as a `.mrpack` (and exported `.zip`) for players to import into

@@ -174,6 +174,9 @@ CF_SOURCES_DIR = "scripts/cf-sources"
 #    options.txt itself, so shipping it as an override applies the rebind with
 #    no extra mod involved.
 CF_EXTRA_DIR = "scripts/cf-extra"
+# Since 2.0.0 this holds mods/distant-horizons.pw.toml: the CurseForge build uses
+# Distant Horizons for far terrain because Voxy isn't on CurseForge. The Modrinth/Prism
+# build keeps Voxy. Keep the two LOD mods split this way; never ship both in one build.
 
 # Appended to the CurseForge release changelog so the CF page always tells
 # players what's missing relative to the Modrinth build, and why.
@@ -182,7 +185,8 @@ CURSEFORGE_EXCLUSION_NOTE = (
     "### Not in the CurseForge build\n"
     "A few things in the Modrinth/Prism build of this pack aren't on CurseForge "
     "for 26.2, so the CurseForge package leaves them out:\n\n"
-    "- **Voxy** (far render distance) — not on CurseForge.\n"
+    "- **Voxy** (far render distance) — not on CurseForge. The CurseForge build ships "
+    "**Distant Horizons** for far terrain instead.\n"
     "- **Fresh Animations** and its add-ons (Fresh Skeleton Physics, FA: Player "
     "Extension, AL's Skeletons / Enderman Revamped) — no 26.2 file on CurseForge yet.\n"
     "- **AL's Creepers Revamped**, **Clearer Slot Highlight**, **Enchantment Outlines** "

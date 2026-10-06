@@ -113,6 +113,11 @@ These mods aren't in the pack yet:
 
 Dropped in 2.0.0 (no 26.x builds): ModernFix, Better Third Person, Eating Animation.
 
+**Far terrain differs by build:** the Prism/`.mrpack` build uses **Voxy**; the CurseForge build
+uses **Distant Horizons** instead, because Voxy isn't on CurseForge. The CurseForge build also
+leaves out Fresh Animations and its add-ons and four packs with no 26.2 file on CurseForge (see
+`CHANGELOG.md`).
+
 `Voxy World Gen V2` from the doc is not a separate client mod — Voxy's V2 world generation is a
 setting inside Voxy's own config, enabled in-game.
 
