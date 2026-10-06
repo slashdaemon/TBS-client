@@ -1,0 +1,13 @@
+name = "Unique Dark"
+filename = "Unique Dark - Lite - 1.20.2-26.x.zip"
+side = "client"
+
+[download]
+hash-format = "sha1"
+hash = "c6e5c35d47d9a0016fd3c878019ba6e07e1fa13e"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8891752
+project-id = 853880

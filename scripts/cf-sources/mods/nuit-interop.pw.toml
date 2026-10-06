@@ -1,0 +1,13 @@
+name = "Nuit Interop"
+filename = "nuit-interop-fabric-1.0.0-beta.5+mc26.2.jar"
+side = "client"
+
+[download]
+hash-format = "sha1"
+hash = "14156118cbd0e87748ebd9fc08db7844c755a376"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8830041
+project-id = 697845

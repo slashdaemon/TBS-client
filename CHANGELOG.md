@@ -75,6 +75,13 @@ tested only against a local server. Nothing is published.
   newest CurseForge Xaero's maps need OPAC 0.32.4+ and refused to load against 0.31.6), so both
   builds ship the same versions. `--changelog-file` uploads player-facing notes instead of this
   section.
+- **CurseForge build bundles almost nothing.** The CurseForge app warned that 23 files "aren't on
+  CurseForge". Nuit, Nuit Interop and 7 resource packs (Better Lanterns, Dramatic Skys, Gentler
+  Weather Sounds, Icons, RAY's 3D Ladders and Rails, Unique Dark) are now CurseForge manifest
+  references at the Prism build's exact versions. Packs with no 26.2 file on CurseForge (AL's
+  Creepers, Clearer Slot Highlight, Enchantment Outlines, MB-3D Items) and the Fresh Animations
+  add-ons are left out of the CurseForge build, as are the pack docs. Only the curated Vanilla
+  Tweaks zip and its `credits.txt` remain bundled.
 - **Subtle Effects easter eggs off by default** (`enableEasterEggs = false`, seeded through
   `config/defaultoptions/extra/config/subtle_effects/general.toml`). They put party hats on players.
   Like every seeded default, it applies to fresh installs only.

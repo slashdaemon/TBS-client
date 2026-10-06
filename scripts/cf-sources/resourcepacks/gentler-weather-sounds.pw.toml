@@ -1,0 +1,13 @@
+name = "Gentler Weather Sounds"
+filename = "Gentler Weather Sounds 2.3.0.zip"
+side = "client"
+
+[download]
+hash-format = "sha1"
+hash = "33245e4e5b9c81651310a34453d63f92ad479c7d"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8881085
+project-id = 1278492

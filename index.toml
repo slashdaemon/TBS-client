@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = "CHANGELOG.md"
-hash = "15001ac17bda3675f6ab838d2d9d6d66720dad79dfcc16bd395dadf3acd79b66"
+hash = "f8641fc95fe896137ef5f0bfbf3f9ce8ba192267d4aebefd9cbc47049fe09dd2"
 
 [[files]]
 file = "README.md"

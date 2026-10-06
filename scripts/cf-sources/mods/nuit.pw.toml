@@ -1,0 +1,13 @@
+name = "Nuit"
+filename = "nuit-fabric-1.0.0-beta.5+mc26.2.jar"
+side = "client"
+
+[download]
+hash-format = "sha1"
+hash = "c01d81d53fbeb11b369d412f17404db4352b7a5a"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8829343
+project-id = 408209

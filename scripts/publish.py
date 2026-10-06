@@ -125,6 +125,23 @@ CURSEFORGE_EXCLUDED = [
     "mods/voxy.pw.toml",                                 # not on CurseForge (Modrinth-only)
     "resourcepacks/fresh-animations.pw.toml",            # no 26.2-tagged file on CurseForge
     "resourcepacks/fresh-animations-extensions.pw.toml", # rides with main FA
+    # Fresh Animations add-ons: useless without FA (and not all on CurseForge for 26.2)
+    "resourcepacks/fresh-skeleton-physics.pw.toml",
+    "resourcepacks/fa-player-extension.pw.toml",
+    "resourcepacks/als-skeletons-revamped-x-fresh-animations.pw.toml",
+    "resourcepacks/als-enderman-revamped-x-fresh-animations.pw.toml",
+    # Not on CurseForge for 26.2, and we may not bundle them
+    "resourcepacks/als-creepers-revamped.pw.toml",
+    "resourcepacks/clearer-slot-highlight.pw.toml",
+    "resourcepacks/glowing-glints.pw.toml",              # Enchantment Outlines
+    "resourcepacks/mb3d-items-pack.pw.toml",
+    # Maintainer docs: shipped in the Prism build, but the CurseForge app lists every
+    # non-CurseForge file in an "aren't on CurseForge / potentially harmful" warning.
+    "README.md",
+    "CHANGELOG.md",
+    "docs/MOD_LIST.md",
+    "docs/resource-packs.md",
+    "docs/TBS-mod-strategy.md",
 ]
 # 2026-10-05: Complementary, Default Options + Balm and Xaero's Minimap/World Map came back
 # into the CurseForge build as manifest references (scripts/cf-sources/). The old reason for
@@ -163,12 +180,13 @@ CF_EXTRA_DIR = "scripts/cf-extra"
 CURSEFORGE_EXCLUSION_NOTE = (
     "\n\n---\n"
     "### Not in the CurseForge build\n"
-    "Two things can't ride along in the CurseForge package. "
-    "Install them yourself if you want them:\n\n"
-    "- **Voxy** (far render distance) — it isn't on CurseForge. Install it from "
-    "its Modrinth page if you want it.\n"
-    "- **Fresh Animations** (+ Extensions) — CurseForge has no 26.2 file yet. "
-    "Add it from its page once one appears.\n\n"
+    "A few things in the Modrinth/Prism build of this pack aren't on CurseForge "
+    "for 26.2, so the CurseForge package leaves them out:\n\n"
+    "- **Voxy** (far render distance) — not on CurseForge.\n"
+    "- **Fresh Animations** and its add-ons (Fresh Skeleton Physics, FA: Player "
+    "Extension, AL's Skeletons / Enderman Revamped) — no 26.2 file on CurseForge yet.\n"
+    "- **AL's Creepers Revamped**, **Clearer Slot Highlight**, **Enchantment Outlines** "
+    "and **MB-3D Items** — not on CurseForge for 26.2.\n\n"
     "### About the macOS / Linux downloads\n"
     "The Windows file is the primary download and references every mod through "
     "`manifest.json`. The macOS and Linux companion files are identical except for "
