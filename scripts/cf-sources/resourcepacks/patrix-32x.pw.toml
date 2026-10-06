@@ -1,13 +1,13 @@
 name = "Patrix 32x"
-filename = "Patrix_26.1_32x_basic.zip"
+filename = "Patrix_26.2_32x_basic.zip"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "09fa8bef6002855a3d40a029ffd44d7f5ed8bd2c"
+hash = "cd4a70aa14521b4918e98750768249f7b963dd69"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 8111455
+file-id = 8788976
 project-id = 785390

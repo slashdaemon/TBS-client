@@ -65,6 +65,14 @@ tested only against a local server. Nothing is published.
   (`scripts/cf-extra/`) is gone. Removed the orphan Photon and Mouse Wheelie swaps, which put
   both back into the CurseForge build. Still out: Voxy (not on CurseForge) and Fresh Animations
   (no 26.2 file on CurseForge).
+- **CurseForge swaps refreshed for 26.2.** 44 of them still pinned 26.1 builds (Fabric API, Sodium,
+  Iris, BSL 10.1.3, Patrix 26.1, …), so the CurseForge zip would not have loaded. `publish.py`'s
+  stale-swap guard missed them: for MC 26.2 it also accepted the token "26", which every 26.x
+  filename contains. The guard now matches the full version on calendar versions, refuses orphan
+  swaps, and refuses a swap for a mod that also runs on the server unless it is the server's exact
+  file (Open Parties and Claims refuses mismatched clients). OPAC and JEI swaps are pinned to the
+  server's 0.31.6 and 30.38.0.230. `--changelog-file` uploads player-facing notes instead of this
+  section.
 - **Subtle Effects easter eggs off by default** (`enableEasterEggs = false`, seeded through
   `config/defaultoptions/extra/config/subtle_effects/general.toml`). They put party hats on players.
   Like every seeded default, it applies to fresh installs only.

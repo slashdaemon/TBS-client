@@ -302,6 +302,13 @@ def packwiz_export(pack_dir: Path, packwiz_exe: Path, platform: str, out_path: P
                 # excluded entry would otherwise sneak it back into the build.
                 if canon in excluded_set:
                     continue
+                # An orphan swap (no canonical entry) would ADD a mod the pack no
+                # longer ships: Photon and Mouse Wheelie came back this way in 2.0.0.
+                if not canon.exists():
+                    raise SystemExit(
+                        f"ERR: orphan CurseForge swap {cf_src.relative_to(pack_dir).as_posix()}"
+                        f" has no canonical {canon.relative_to(pack_dir).as_posix()}. Delete"
+                        " it, or add the canonical entry back if the mod should ship.")
                 swaps[canon] = cf_src
 
         # CF-only extra files (see CF_EXTRA_DIR). These have no canonical
@@ -330,7 +337,12 @@ def packwiz_export(pack_dir: Path, packwiz_exe: Path, platform: str, out_path: P
         # encode the MC version in their filename never false-positive.)
         mc_version = read_pack_field(pack_dir / "pack.toml", "minecraft",
                                      section="versions")
-        mc_tokens = [t for t in (mc_version, mc_version.rsplit(".", 1)[0]) if t]
+        # Old-style versions (1.21.11) also match their major line (1.21). Calendar
+        # versions (26.2) must not: the shortened "26" matches every 26.x build, which
+        # let 45 stale 26.1 swaps through in 2.0.0.
+        mc_tokens = [mc_version]
+        if mc_version.count(".") >= 2:
+            mc_tokens.append(mc_version.rsplit(".", 1)[0])
         stale: list[str] = []
         for canon, cf_src in swaps.items():
             canon_fn, swap_fn = pw_filename(canon), pw_filename(cf_src)
@@ -342,14 +354,29 @@ def packwiz_export(pack_dir: Path, packwiz_exe: Path, platform: str, out_path: P
                     f"    {canon.relative_to(pack_dir).as_posix()}: "
                     f"Modrinth ships '{canon_fn}' but the CurseForge swap "
                     f"({cf_src.relative_to(pack_dir).as_posix()}) pins '{swap_fn}'")
+        # Server-match guard. A mod that runs on both the TBS server and the client
+        # (Open Parties and Claims, JEI, ...) must be the exact same file, or OPAC
+        # refuses the connection ("versions between server and client aren't
+        # compatible", 2026-10-05). StreamCraft is exempt: its CF file differs only by
+        # the -cf classifier. Checked against the sibling TBS-server pack when present.
+        server_mods = pack_dir.parent / "TBS-server" / "mods"
+        if server_mods.is_dir():
+            for canon, cf_src in swaps.items():
+                srv = server_mods / canon.name
+                if canon.parent.name != "mods" or not srv.exists() or canon.name == "streamcraft-live.pw.toml":
+                    continue
+                if pw_filename(srv) != pw_filename(cf_src):
+                    stale.append(
+                        f"    {cf_src.relative_to(pack_dir).as_posix()}: CurseForge swap pins "
+                        f"'{pw_filename(cf_src)}' but TBS-server runs '{pw_filename(srv)}' "
+                        "(cross-side mods must match the server exactly)")
         if stale:
             raise SystemExit(
-                "ERR: stale CurseForge swap(s) — the pinned CurseForge file targets "
-                f"an older Minecraft build than the canonical pack (MC {mc_version}):\n"
+                f"ERR: CurseForge swap problem(s) for MC {mc_version}:\n"
                 + "\n".join(stale)
-                + f"\n  CurseForge has no {mc_version} build for these mods yet. Delete "
-                  "the offending scripts/cf-sources/<...>.pw.toml so the mod rides as a "
-                  "bundled override, and re-add the swap once CurseForge catches up.")
+                + "\n  A stale swap: CurseForge has no build for this MC version yet; delete the "
+                  "scripts/cf-sources/<...>.pw.toml so the mod rides as a bundled override. "
+                  "A server mismatch: pin the swap to the TBS-server file.")
 
     if variant != DEFAULT_VARIANT:
         plat_root = pack_dir / PLATFORM_SOURCES_DIR / variant
@@ -841,6 +868,9 @@ def main() -> int:
                    help="Upload nothing; just read the CurseForge release back and "
                         "report whether the expected companions are attached. "
                         "Requires --cf-parent-file-id.")
+    p.add_argument("--changelog-file", metavar="PATH",
+                   help="Player-facing release notes (Markdown) to upload instead of the "
+                        "CHANGELOG.md section. Lines starting with 'DRAFT' are dropped.")
     p.add_argument("--dry-run", action="store_true",
                    help="Export and print upload metadata, but upload nothing")
     args = p.parse_args()
@@ -865,7 +895,11 @@ def main() -> int:
     game_versions = ([v.strip() for v in args.game_versions.split(",")]
                      if args.game_versions else [mc_version])
 
-    changelog_md = extract_changelog(pack_dir / "CHANGELOG.md", version)
+    if args.changelog_file:
+        notes = Path(args.changelog_file).read_text(encoding="utf-8").splitlines()
+        changelog_md = "\n".join(l for l in notes if not l.startswith("DRAFT")).strip()
+    else:
+        changelog_md = extract_changelog(pack_dir / "CHANGELOG.md", version)
     if changelog_md:
         print(f"Version {version} — changelog: "
               f"{changelog_md.splitlines()[0]} ({len(changelog_md)} chars)")

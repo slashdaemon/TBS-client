@@ -1,13 +1,13 @@
 name = "WTHIT"
-filename = "wthit-26.1-fabric-19.0.1.jar"
+filename = "wthit-26.2-fabric-20.0.0.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "64274369887a97221ac1fe5d8628ea4796aa53d1"
+hash = "fc28fe7b0a0f95b45bb8f1eff161afa545ddadef"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 7880671
+file-id = 8512440
 project-id = 440979

@@ -1,13 +1,13 @@
 name = "Bridging Mod"
-filename = "BridgingMod-2.6.6+26.1.fabric-release.jar"
+filename = "BridgingMod-2.7.0+26.2.fabric-release.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "18333a0abaff3ef193a9300688c9816116b1188c"
+hash = "676955a62438dbf160ede7bc2ca1c338a4f6f8d8"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 7915819
+file-id = 8261875
 project-id = 533942
