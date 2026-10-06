@@ -319,10 +319,48 @@ If `cf install` creates a different-named metafile (e.g. `ferritecore-fabric.pw.
 when the canonical is `ferrite-core.pw.toml`), **rename the saved cf-source file
 to match the canonical name** — the swap is path-for-path.
 
-### CurseForge project description note
+### CurseForge project description (paste into the CurseForge body)
 
-In the CurseForge project description, omit Voxy and the visual layer (the
-Modrinth description above lists them). Reuse the rest of the body.
+The CurseForge build differs from the Prism build (Distant Horizons instead of Voxy, no
+Fresh Animations, everything installed with defaults instead of import toggles), so it has
+its own description. Updated for 2.0.0 (2026-10-05). `publish.py` does not set it; paste it
+into the project's description on CurseForge by hand.
+
+```markdown
+# TheBlockSurvival
+
+**An optional client-side polish pack for vanilla-friendly Minecraft 26.2.**
+
+TheBlockSurvival sharpens performance, lighting, audio and quality of life for long survival sessions, without touching a single gameplay mechanic. Every mod is client-side and safe on a vanilla server, so the pack works on **any** vanilla 26.2 server. It's the companion client pack for *The Block Survival*, but it's worth installing without a special server too.
+
+## What's inside
+
+- **Performance** — Sodium, Lithium, Krypton, FerriteCore, ImmediatelyFast, BadOptimizations, EntityCulling.
+- **Far terrain** — Distant Horizons draws the world far past your render distance.
+- **Render detail** — Iris shaders, connected textures, Entity Model & Texture Features, falling leaves, subtle particles, Sound Physics Remastered and AmbientSounds.
+- **Camera, controls & animation** — Zoomify, Camera Utils, smooth item swapping, first-person body, 3D skin layers, Not Enough Animations, Bridging Mod.
+- **HUD & quality of life** — JEI recipe search, WTHIT block tooltips, AppleSkin, BetterF3, Xaero's Minimap and World Map, Open Parties and Claims, Mod Menu, Controlling, and more.
+- **Multiplayer** — StreamCraft Live (in-world video, screen share and voice) and SlashRails (smooth curved rails). Both are optional per player and only do anything on servers that run them.
+
+## Set up on first launch
+
+A fresh install starts dialed in:
+
+- **Complementary Shaders – Reimagined** is on, with **BSL** included as a lighter alternative. You can switch either off in the shader menu.
+- **Resource packs on by default:** Vanilla Tweaks, Dramatic Skys custom skies, 3D lanterns, rails and ladders, the Unique Dark GUI, Icons, and Gentler Weather Sounds.
+- **Patrix 32x** (labPBR) is included but off by default; turn it on in Resource Packs.
+- **OpenGL** is the graphics backend. 26.2's Vulkan mode crashes with shaders.
+
+Your own changes are never overwritten when the pack updates.
+
+## Vanilla-safe by design
+
+No new blocks, items, mobs or world generation. You get the **same game** as a stock vanilla client, rendered better and easier to play, and you can join any vanilla 26.2 server with it.
+
+## Credits
+
+Built with [packwiz](https://packwiz.infra.link/). Every mod, shader and resource pack is the work of its respective author. Please support them.
+```
 
 ### Credentials and submission
 
