@@ -85,7 +85,8 @@ slabs are 16x textures from the server pack, which outranks any client pack, so 
 next to Patrix's 32x grass under every shader (checked 2026-10-05).
 
 **Shaders:** **BSL 10.1.8** is selected and enabled on first launch. Complementary Reimagined
-r5.9.3 and Solas 3.7b ship as alternatives. Photon was removed in 2.0.0 (no 26.2 build). Turn
+r5.9.3 ships as an alternative. Photon and Solas were removed in 2.0.0 (Photon has no 26.2 build;
+Solas 3.7b renders broken on 26.2). Turn
 shaders off in **Options → Video Settings → Shader Packs** for a lighter client; the choice
 sticks. With Complementary and Patrix, open **Shader Options → RP Support → labPBR** for POM and
 reflections.

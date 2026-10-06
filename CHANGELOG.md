@@ -26,8 +26,9 @@ tested only against a local server. Nothing is published.
   and Voxy calls into it anyway (`NullPointerException` on `IrisRenderSystem.samplers`). Like
   every seeded default, this only applies on a fresh install, and a player can still switch to
   Vulkan in Video Settings and hit the crash.
-- **Shaders:** BSL 10.1.3 → 10.1.8, Complementary Reimagined r5.8 → r5.9.3, and Solas 3.7 → 3.7b.
-  **Removed Photon**, which has no 26.2 build: v1.3b renders broken on 26.2. The default shader
+- **Shaders:** BSL 10.1.3 → 10.1.8 and Complementary Reimagined r5.8 → r5.9.3.
+  **Removed Photon**, which has no 26.2 build: v1.3b renders broken on 26.2. **Removed Solas**:
+  3.7b renders broken on 26.2 (owner's manual test, 2026-10-05). The default shader
   had pointed at `BSL_v10.1.3.zip`, a file that no longer exists, so no shader loaded on first
   launch. It now points at `BSL_v10.1.8.zip`.
 - **Resource packs:** Patrix now uses its 26.2 build. Fresh Animations Extensions v1.9 → v1.9.2;

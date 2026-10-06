@@ -2,11 +2,11 @@ hash-format = "sha256"
 
 [[files]]
 file = "CHANGELOG.md"
-hash = "825f1c9a1e328332dcfbb78c5b63a80450bec25fa583feca8f7946c36a3ee093"
+hash = "4e9d6dc7e209be862bf18b761f4647f367b458f3dd1638cea943f94568f24b2b"
 
 [[files]]
 file = "README.md"
-hash = "1a4f23372809d508a287938b60dce3ef529913750462bc1c1ce3e65cd34bebbd"
+hash = "f0ddc794e3ececa70a85581e162891ca30eded486cded8068c66784fabd17c07"
 
 [[files]]
 file = "config/defaultoptions/extra/config/iris.properties"
@@ -415,9 +415,4 @@ metafile = true
 [[files]]
 file = "shaderpacks/complementary-reimagined.pw.toml"
 hash = "69f4f1892b1194e4bb0bd9bf0eb4f529cbfdbb68378113ad2a69192252d0089c"
-metafile = true
-
-[[files]]
-file = "shaderpacks/solas-shader.pw.toml"
-hash = "d3fecd9ded1aa43d93fd95076da757a16e483ea41b9a289ec743007fa5a9d697"
 metafile = true

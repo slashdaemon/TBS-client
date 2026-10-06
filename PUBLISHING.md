@@ -149,10 +149,10 @@ needs no special server to be worth installing.
 ## Visual layer
 
 **BSL Shaders is on by default** for a dialed-in look out of the box (toggle
-off in the shader menu for maximum performance). Solas and Photon ship
-alongside as alternatives, plus optional toggles chosen at import:
+off in the shader menu for maximum performance), plus optional toggles chosen
+at import:
 
-- BSL Shaders (default), Solas Shader, Photon Shader
+- BSL Shaders (default)
 - Complementary Shaders – Reimagined (optional toggle)
 - Patrix 32x — labPBR resource pack (optional toggle)
 - Fresh Animations (+ Emissive, + Extensions)
