@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = "CHANGELOG.md"
-hash = "4e9d6dc7e209be862bf18b761f4647f367b458f3dd1638cea943f94568f24b2b"
+hash = "4a06c6fb3dfab2ac83722bf83ba1a112fb0386a3e9965d8b24fae3bf67f5c075"
 
 [[files]]
 file = "README.md"
@@ -11,6 +11,10 @@ hash = "f0ddc794e3ececa70a85581e162891ca30eded486cded8068c66784fabd17c07"
 [[files]]
 file = "config/defaultoptions/extra/config/iris.properties"
 hash = "f7fab7c352aa18da24b38fe6bf40e4c26f9ebcd34bc942fbf72ff37bb9d861f1"
+
+[[files]]
+file = "config/defaultoptions/extra/config/subtle_effects/general.toml"
+hash = "d44b8980a4de1c8c804b469b1bbc1251c3cf384b1a29aee5042fd0c0edb55ae1"
 
 [[files]]
 file = "config/defaultoptions/extra/config/xaero/minimap/profiles/default.cfg"

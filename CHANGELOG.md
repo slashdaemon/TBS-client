@@ -55,6 +55,9 @@ tested only against a local server. Nothing is published.
 - **Added Nuit + Nuit Interop** (both beta on 26.2; Nuit pinned to beta.5, because Interop beta.5 requires exactly that version): custom-skybox support that Dramatic Skys needs.
   Default Options only seeds a fresh install, so existing players have to enable the new packs
   once by hand; the release notes need to say so.
+- **Subtle Effects easter eggs off by default** (`enableEasterEggs = false`, seeded through
+  `config/defaultoptions/extra/config/subtle_effects/general.toml`). They put party hats on players.
+  Like every seeded default, it applies to fresh installs only.
 - **Removed Mouse Wheelie** (pending). Its `InteractionManager` runs on a non-daemon scheduled
   thread (`pool-4-thread-1`, identified with JFR), which keeps the JVM alive on quit. Minecraft's
   shutdown watchdog then crashes the game after every exit, and Crash Assistant shows its dialog.
