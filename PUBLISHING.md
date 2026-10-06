@@ -337,8 +337,6 @@ TheBlockSurvival sharpens performance, lighting, audio and quality of life for l
 
 The pack's home server is **The Block Survival**, a vanilla-friendly 26.2 survival SMP at `theblocksurvival.com`. It's already in your server list after a fresh install. Bedrock players can join too.
 
-The server is whitelisted: join our [Discord](https://discord.gg/cdsspRR5mu) and ask in #join-smp to get added.
-
 ## What's inside
 
 - **Performance** — Sodium, Lithium, Krypton, FerriteCore, ImmediatelyFast, BadOptimizations, EntityCulling.
