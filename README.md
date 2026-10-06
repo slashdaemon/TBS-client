@@ -84,8 +84,8 @@ packs by hand.
 slabs are 16x textures from the server pack, which outranks any client pack, so they look flat
 next to Patrix's 32x grass under every shader (checked 2026-10-05).
 
-**Shaders:** **BSL 10.1.8** is selected and enabled on first launch. Complementary Reimagined
-r5.9.3 ships as an alternative. Photon and Solas were removed in 2.0.0 (Photon has no 26.2 build;
+**Shaders:** **Complementary Reimagined r5.9.3** is selected and enabled on first launch. BSL
+10.1.8 ships as an alternative. Photon and Solas were removed in 2.0.0 (Photon has no 26.2 build;
 Solas 3.7b renders broken on 26.2). Turn
 shaders off in **Options → Video Settings → Shader Packs** for a lighter client; the choice
 sticks. With Complementary and Patrix, open **Shader Options → RP Support → labPBR** for POM and
@@ -98,8 +98,8 @@ sound volume **20%**, **Xaero's minimap hidden** (press **`K`** to toggle it on)
 player who switches to Vulkan in Video Settings will hit that crash.
 
 **Performance:** the full stack (shader + Fresh Animations + Voxy) targets roughly an
-RTX 3060 / 8 GB-VRAM-class machine at ~60 FPS / 1080p. On weaker hardware, drop the shader to a
-lower preset or turn it off.
+RTX 3060 / 8 GB-VRAM-class machine at ~60 FPS / 1080p. On weaker hardware, switch to BSL, drop
+the shader to a lower preset, or turn it off.
 
 ## Pending mods
 

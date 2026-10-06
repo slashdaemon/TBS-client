@@ -14,4 +14,5 @@ version = "Bqen1mJX"
 
 [option]
 optional = true
-description = "Iris shader pack for high-fidelity lighting. Requires Iris (already included); notable FPS/VRAM cost. Off by default — see README for the labPBR RP Support step."
+default = true
+description = "Iris shader pack for high-fidelity lighting, the pack's default shader. Requires Iris (already included); notable FPS/VRAM cost. With Patrix 32x, see README for the labPBR RP Support step."

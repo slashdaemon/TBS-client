@@ -55,6 +55,9 @@ tested only against a local server. Nothing is published.
 - **Added Nuit + Nuit Interop** (both beta on 26.2; Nuit pinned to beta.5, because Interop beta.5 requires exactly that version): custom-skybox support that Dramatic Skys needs.
   Default Options only seeds a fresh install, so existing players have to enable the new packs
   once by hand; the release notes need to say so.
+- **Complementary Reimagined is the default shader** (was BSL): the Default Options seed selects
+  `ComplementaryReimagined_r5.9.3.zip`, and the Complementary entry is now on by default. BSL
+  10.1.8 stays as the alternative.
 - **Subtle Effects easter eggs off by default** (`enableEasterEggs = false`, seeded through
   `config/defaultoptions/extra/config/subtle_effects/general.toml`). They put party hats on players.
   Like every seeded default, it applies to fresh installs only.

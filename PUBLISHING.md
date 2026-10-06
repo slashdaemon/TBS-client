@@ -148,12 +148,12 @@ needs no special server to be worth installing.
 
 ## Visual layer
 
-**BSL Shaders is on by default** for a dialed-in look out of the box (toggle
-off in the shader menu for maximum performance), plus optional toggles chosen
-at import:
+**Complementary Shaders – Reimagined is on by default** for a dialed-in look out
+of the box (switch to BSL or turn shaders off in the shader menu for more
+performance), plus optional toggles chosen at import:
 
-- BSL Shaders (default)
-- Complementary Shaders – Reimagined (optional toggle)
+- Complementary Shaders – Reimagined (default)
+- BSL Shaders (alternative)
 - Patrix 32x — labPBR resource pack (optional toggle)
 - Fresh Animations (+ Emissive, + Extensions)
 
