@@ -122,16 +122,14 @@ def variant_suffix(variant: str) -> str:
 # 1. EXCLUDE: pack entries that cannot ship in the CurseForge package at all.
 #    Paths relative to the pack root.
 CURSEFORGE_EXCLUDED = [
-    "mods/voxy.pw.toml",                                 # CurseForge prohibits Voxy in modpacks
-    "shaderpacks/complementary-reimagined.pw.toml",      # custom license; install separately
-    "resourcepacks/fresh-animations.pw.toml",            # "see terms" license; install separately
-    "resourcepacks/fresh-animations-emissive.pw.toml",   # ARR; rides with main FA
-    "resourcepacks/fresh-animations-extensions.pw.toml", # ARR; rides with main FA
-    "mods/default-options.pw.toml",                      # ARR; sets OPAC keybind default, install separately
-    "mods/balm.pw.toml",                                 # only a dep of Default Options; excluded with it
-    "mods/xaeros-minimap.pw.toml",                       # ARR; CF users install from CurseForge directly
-    "mods/xaeros-world-map.pw.toml",                     # ARR; CF users install from CurseForge directly
+    "mods/voxy.pw.toml",                                 # not on CurseForge (Modrinth-only)
+    "resourcepacks/fresh-animations.pw.toml",            # no 26.2-tagged file on CurseForge
+    "resourcepacks/fresh-animations-extensions.pw.toml", # rides with main FA
 ]
+# 2026-10-05: Complementary, Default Options + Balm and Xaero's Minimap/World Map came back
+# into the CurseForge build as manifest references (scripts/cf-sources/). The old reason for
+# leaving them out ("ARR / custom license, install separately") applied to bundling jars into a
+# Modrinth-first pack; a CurseForge manifest only points at CurseForge-hosted files.
 
 # 2. SWAP: pack entries whose canonical Modrinth-sourced .pw.toml is replaced
 #    with a CurseForge-sourced equivalent so the CF zip carries a proper
@@ -165,21 +163,12 @@ CF_EXTRA_DIR = "scripts/cf-extra"
 CURSEFORGE_EXCLUSION_NOTE = (
     "\n\n---\n"
     "### Not in the CurseForge build\n"
-    "A few things can't ride along inside the CurseForge package because of "
-    "licensing or CurseForge policy. The **Modrinth** build of this pack "
-    "includes them; on CurseForge, install them yourself:\n\n"
-    "- **Voxy** — CurseForge does not permit redistributing it in modpacks. "
-    "Install from its Modrinth page.\n"
-    "- **Complementary Shaders – Reimagined** — install from its CurseForge "
-    "page. The bundled **Patrix 32x** resource pack pairs with it for labPBR.\n"
-    "- **Fresh Animations** (main pack + Emissive + Extensions) — install the "
-    "FA family from CurseForge.\n"
-    "- **Default Options** (+ **Balm**) — only sets the Open Parties and Claims "
-    "menu key to semicolon by default (ARR license). Optional: install both from "
-    "CurseForge for the default, or just rebind the key yourself in Controls.\n"
-    "- **Xaero's Minimap** + **Xaero's World Map** — ARR license; install both from "
-    "CurseForge (one click in the CF app). They power the Open Parties and Claims "
-    "map overlay. The Modrinth build bundles them.\n\n"
+    "Two things can't ride along in the CurseForge package. "
+    "Install them yourself if you want them:\n\n"
+    "- **Voxy** (far render distance) — it isn't on CurseForge. Install it from "
+    "its Modrinth page if you want it.\n"
+    "- **Fresh Animations** (+ Extensions) — CurseForge has no 26.2 file yet. "
+    "Add it from its page once one appears.\n\n"
     "### About the macOS / Linux downloads\n"
     "The Windows file is the primary download and references every mod through "
     "`manifest.json`. The macOS and Linux companion files are identical except for "

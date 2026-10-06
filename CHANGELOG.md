@@ -58,6 +58,13 @@ tested only against a local server. Nothing is published.
 - **Complementary Reimagined is the default shader** (was BSL): the Default Options seed selects
   `ComplementaryReimagined_r5.9.3.zip`, and the Complementary entry is now on by default. BSL
   10.1.8 stays as the alternative.
+- **CurseForge build:** Complementary Reimagined, Default Options + Balm and Xaero's Minimap /
+  World Map are back in, as manifest references (they had been left out for license reasons that
+  only applied to bundling jars). With Default Options in, CurseForge installs get the same
+  first-launch defaults as the Prism build, so the separate CurseForge `options.txt` override
+  (`scripts/cf-extra/`) is gone. Removed the orphan Photon and Mouse Wheelie swaps, which put
+  both back into the CurseForge build. Still out: Voxy (not on CurseForge) and Fresh Animations
+  (no 26.2 file on CurseForge).
 - **Subtle Effects easter eggs off by default** (`enableEasterEggs = false`, seeded through
   `config/defaultoptions/extra/config/subtle_effects/general.toml`). They put party hats on players.
   Like every seeded default, it applies to fresh installs only.
