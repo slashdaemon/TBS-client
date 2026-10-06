@@ -333,6 +333,12 @@ into the project's description on CurseForge by hand.
 
 TheBlockSurvival sharpens performance, lighting, audio and quality of life for long survival sessions, without touching a single gameplay mechanic. Every mod is client-side and safe on a vanilla server, so the pack works on **any** vanilla 26.2 server. It's the companion client pack for *The Block Survival*, but it's worth installing without a special server too.
 
+## Play on The Block Survival
+
+The pack's home server is **The Block Survival**, a vanilla-friendly 26.2 survival SMP at `theblocksurvival.com`. It's already in your server list after a fresh install. Bedrock players can join too.
+
+The server is whitelisted: join our [Discord](https://discord.gg/cdsspRR5mu) and ask in #join-smp to get added.
+
 ## What's inside
 
 - **Performance** — Sodium, Lithium, Krypton, FerriteCore, ImmediatelyFast, BadOptimizations, EntityCulling.
