@@ -2,7 +2,7 @@
 
 All notable changes to the TheBlockSurvival client modpack (formerly TBS-Client).
 
-## [2.0.0] — unreleased (draft, branch `reset-26.2`)
+## [2.0.0] — 2026-10-05
 
 **Minecraft 26.2**, in lockstep with TBS-Server 2.0.0, for the world reset. This is a draft,
 tested only against a local server. Nothing is published.
