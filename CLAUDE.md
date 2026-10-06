@@ -21,17 +21,20 @@ Commit pack changes here, inside `TBS-client/`.
 ## The hard constraint: client-side-only
 
 Every mod in this pack must be **client-side-only and safe against a vanilla server** — it
-must run when the player connects to a stock vanilla 26.1.2 server (which TBS's base server
+must run when the player connects to a stock vanilla 26.2 server (which TBS's base server
 effectively is). Concretely:
 
 - No content mods, no worldgen/structure/mob mods, no mod that needs a server companion.
 - The `side` field in each `.pw.toml` should be `client` for every mod **except
-  StreamCraft Live**, which is `side = "both"` — it is the one mod shared with TBS-Server.
+  StreamCraft Live and SlashRails**, which are `side = "both"` — the two mods shared with
+  TBS-Server.
 - Before adding any mod, confirm it is client-only. See the exclusion lists in
   `docs/TBS-mod-strategy.md`.
 
-StreamCraft Live's jar version must stay **identical** to the TBS-Server copy. Bumping it
-is a synchronized release of both packs; do not bump it here alone. Every other mod's
+StreamCraft Live's and SlashRails' jar versions must stay **identical** to the TBS-Server
+copies. Bumping either is a synchronized release of both packs; do not bump it here alone.
+SlashRails is pinned from CurseForge in both packs (TBS distributes on CurseForge only) and has
+no per-OS overlays. Every other mod's
 version is independent of TBS-Server.
 
 ## Mod organization
@@ -40,7 +43,7 @@ Mods follow a five-tier scheme (Foundation → Visual range/quality → Camera/c
 animations → HUD/UI/utility → Cross-side). The tiers are documentation only — they live in
 `README.md` and `CHANGELOG.md`, not in the pack metadata. `mods/` is a flat directory.
 
-Mods with no 26.1.2 build yet are tracked under "Pending mods" in `README.md` and
+Mods with no 26.2 build yet are tracked under "Pending mods" in `README.md` and
 "Not yet included" in `CHANGELOG.md` — add them when builds appear, don't silently drop them.
 
 ## Commands
@@ -64,8 +67,8 @@ stale-swap guard). See `PUBLISHING.md`.
 
 `index.toml` tracks `README.md`, `CHANGELOG.md`, and `docs/` alongside the `.pw.toml`
 files — so editing any of those by hand requires a `refresh` afterward to fix the index
-and `pack.toml` hashes. 26.1.2 is the Fabric 1.21.11 ecosystem; a mod tagged `26.1.x`
-*or* `1.21.11` generally works.
+and `pack.toml` hashes. The pack targets MC 26.2 (since 2.0.0); only mods tagged for 26.2 are
+safe to assume work.
 
 ## Adding or changing a mod — full checklist
 

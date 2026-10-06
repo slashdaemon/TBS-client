@@ -6,7 +6,7 @@ hash = "825f1c9a1e328332dcfbb78c5b63a80450bec25fa583feca8f7946c36a3ee093"
 
 [[files]]
 file = "README.md"
-hash = "d7db766f303cedb4fcdee73c38e4e6f2b3b8deec456fc4610524bd3cc81ea5d1"
+hash = "1a4f23372809d508a287938b60dce3ef529913750462bc1c1ce3e65cd34bebbd"
 
 [[files]]
 file = "config/defaultoptions/extra/config/iris.properties"
@@ -42,7 +42,7 @@ hash = "8345978c9c570d39209776b954d442c4377c60b00262c2cd04237c254f902831"
 
 [[files]]
 file = "docs/TBS-mod-strategy.md"
-hash = "bb48072adbe245aa87adb77ad449ffa31eac3ab86fa6bdc144f7f436a93a355c"
+hash = "7197449604fdcaf01bf634c19f21acb6611710aed97b37d1eeca23a81fc688c5"
 
 [[files]]
 file = "docs/resource-packs.md"
