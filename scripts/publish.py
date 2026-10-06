@@ -199,7 +199,7 @@ CF_EXTRA_DIR = "scripts/cf-extra"
 CURSEFORGE_EXCLUSION_NOTE = (
     "\n\n---\n"
     "### Not in the CurseForge build\n"
-    "A few things in the Modrinth/Prism build of this pack aren't on CurseForge "
+    "A few things in the Prism build of this pack aren't on CurseForge "
     "for 26.2, so the CurseForge package leaves them out:\n\n"
     "- **Voxy** (far render distance) — not on CurseForge. The CurseForge build ships "
     "**Distant Horizons** for far terrain instead.\n"
