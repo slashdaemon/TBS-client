@@ -2,19 +2,19 @@ hash-format = "sha256"
 
 [[files]]
 file = "CHANGELOG.md"
-hash = "aefe673bafbf52c49af20d4323265dc059307cb8f6f11ffa0d93ddb047bdf277"
+hash = "aff4d7054ef3662ed4a983700665ecdf0787532b6d0270b512b555d9881f95b5"
 
 [[files]]
 file = "README.md"
-hash = "924f9a8c7c0a16a2e05902bff1f986b5c6b3cb1b937e8f2e05bbad4c1d9ba7b4"
+hash = "2d72c3ae1770d312925695f74622d6fb9a9b76c809ec70d30bcc30b0a27525eb"
 
 [[files]]
 file = "config/defaultoptions/extra/config/iris.properties"
-hash = "e471368ddedc6cf683b5a6ce2ac93dea8a3be4b80cb04609cece33e9cf19041b"
+hash = "ddacfa2c8775141c470e3f1e7f3e956c079815697b780bde0ecd2d839dc576ae"
 
 [[files]]
 file = "config/defaultoptions/extra/config/subtle_effects/general.toml"
-hash = "d44b8980a4de1c8c804b469b1bbc1251c3cf384b1a29aee5042fd0c0edb55ae1"
+hash = "7e0a8afd03897d380f18f8bc1a3b37ec75534608f50f15455b4d01942a9e4aef"
 
 [[files]]
 file = "config/defaultoptions/extra/config/xaero/minimap/profiles/default.cfg"
@@ -46,7 +46,7 @@ hash = "8345978c9c570d39209776b954d442c4377c60b00262c2cd04237c254f902831"
 
 [[files]]
 file = "docs/TBS-mod-strategy.md"
-hash = "7197449604fdcaf01bf634c19f21acb6611710aed97b37d1eeca23a81fc688c5"
+hash = "f3c2df73ee3438ebe3e1fa6a0c60cad4626a404e3fe1eb5e6c8657d6a6e5bb22"
 
 [[files]]
 file = "docs/resource-packs.md"
@@ -244,7 +244,7 @@ metafile = true
 
 [[files]]
 file = "mods/slashrails.pw.toml"
-hash = "446f763361998b891cfdb5d936ca489d2670df087830591cafd8c39f6ce96c3d"
+hash = "47890b2551bfe7ef9f708dfe97f828520a4bb1b43b3db3f168e065f2f4ae15d0"
 metafile = true
 
 [[files]]
@@ -269,7 +269,7 @@ metafile = true
 
 [[files]]
 file = "mods/streamcraft-live.pw.toml"
-hash = "d5230f5b31ad39a344f964fe8acbfa02925e40e20a112cd3ca48a0bc31eaf1e1"
+hash = "3bb9d2cbcf545235f1acca545c2ab9159383a791502e3ab941a7f609a9c68d81"
 metafile = true
 
 [[files]]
@@ -418,5 +418,5 @@ metafile = true
 
 [[files]]
 file = "shaderpacks/complementary-reimagined.pw.toml"
-hash = "1c97a4407924594b02e737c12efa8cc4c57b8752c0e5bb5db3663777d6b80d76"
+hash = "5be894718f15daa03189bc08270048227dafeeeda9313a30de398a34a95a2a8e"
 metafile = true

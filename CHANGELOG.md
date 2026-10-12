@@ -2,6 +2,24 @@
 
 All notable changes to the TheBlockSurvival client modpack (formerly TBS-Client).
 
+## [2.0.1] — 2026-10-12
+
+**StreamCraft Live 0.28.6 → 0.29.3**, a security release. Lockstep with TBS-Server 2.0.1 —
+run the same StreamCraft version as the server. No other mod changed.
+
+- Repinned **StreamCraft Live → 0.29.3+mc26.2** (Modrinth `QemNZeWt`). Highlights for players:
+  - **Security fixes.** Please update.
+  - **Screen-share Audio picker** on the Live page, next to Source: *Everything except
+    Minecraft* (default), *Shared window's app*, *One app*, or *Off*. Your stream no longer
+    echoes game sound and voice chat back to everyone. Needs Windows 10 2004+, macOS 13+, or
+    Linux with PipeWire; older systems fall back to whole desktop with a warning.
+  - The confetti and slide-in when StreamCraft social first appears are gone.
+- All five per-OS pins updated in sync (Windows primary, Linux, Linux ARM64, macOS
+  arm64/x86_64) plus the CurseForge swap (CF file `9142409`, project `1451729`; byte-identical
+  to the Modrinth pc jar).
+- **No wire-protocol change** (still 8), so a 2.0.0 client still connects, but update to match
+  the server to get the security fixes.
+
 ## [2.0.0] — 2026-10-05
 
 **Minecraft 26.2**, in lockstep with TBS-Server 2.0.0, for the world reset. This is a draft,
