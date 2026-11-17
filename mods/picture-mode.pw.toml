@@ -1,0 +1,13 @@
+name = "Picture Mode"
+filename = "picturemode-fabric-1.1.8+26.3.jar"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/kFU5UCQz/versions/PEX0z3DS/picturemode-fabric-1.1.8%2B26.3.jar"
+hash-format = "sha512"
+hash = "11d51e0d9dfc223858202138c16858000e1a47139bd4a1cc6002aca90809fcf4910956a65c82ac4005ee92be9ae65092c393807523039bf890c340e755f6070b"
+
+[update]
+[update.modrinth]
+mod-id = "kFU5UCQz"
+version = "PEX0z3DS"

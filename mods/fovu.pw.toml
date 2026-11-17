@@ -1,0 +1,13 @@
+name = "FOVU - FOV Unbound!"
+filename = "fovu-1.0.0-[26.2-26.3].jar"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/4VWn72Xk/versions/TuKTgH42/fovu-1.0.0-%5B26.2-26.3%5D.jar"
+hash-format = "sha512"
+hash = "435524eb1d066ecb864378c07960935b327828de4293eba2b480fdf9fa0b1da628540b4bddce3d5430023da231884c2bbe0627e1ad61f33bf73b9d8be9a5106a"
+
+[update]
+[update.modrinth]
+mod-id = "4VWn72Xk"
+version = "TuKTgH42"

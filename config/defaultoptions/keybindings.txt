@@ -3,3 +3,5 @@ key_gui.xaero_open_map:key.keyboard.n
 key_gui.xaero_toggle_map:key.keyboard.k
 key_iris.keybind.toggleShaders:key.keyboard.unknown
 key_iris.keybind.reload:key.keyboard.unknown
+key_key.picturemode.open:key.keyboard.f8
+key_key.replaymod.marker:key.keyboard.unknown

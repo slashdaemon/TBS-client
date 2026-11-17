@@ -3,11 +3,11 @@ filename = "Fresh Skeleton Physics.zip"
 side = "client"
 
 [download]
-url = "https://cdn.modrinth.com/data/XZhhYcY0/versions/CEo0BuyL/Fresh%20Skeleton%20Physics.zip"
+url = "https://cdn.modrinth.com/data/XZhhYcY0/versions/y00ccPM4/Fresh%20Skeleton%20Physics.zip"
 hash-format = "sha512"
-hash = "a3674d5fad67196c96f9650a36367983997ba9e13509e33c47bbddad9381a60cff7b2c7c82a85f9fa58ee957300ed345dd62814363187b1d8a2767b284a2bb65"
+hash = "a851b8ba6499cff49ae2ee33ab858159b303313a2d5c074152ddb078a78f4d0ff5b8110185f4476e1ab34324a4a2450096f48e97fd4f99a58c70cf8a4ed1254d"
 
 [update]
 [update.modrinth]
 mod-id = "XZhhYcY0"
-version = "CEo0BuyL"
+version = "y00ccPM4"

@@ -1,0 +1,13 @@
+name = "Mickey Joe's Flowers!"
+filename = "MickeyJoesFlowersV7.zip"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/JfivfXs9/versions/Cn0PkfKe/MickeyJoesFlowersV7.zip"
+hash-format = "sha512"
+hash = "302500181e5d35f95ef6efcd6fbdfd028b95e4137eca47368af74966184a65117c75a5d416df85c7cc56bccadc06e577230a80a07b8000e6855fc8276bdb4818"
+
+[update]
+[update.modrinth]
+mod-id = "JfivfXs9"
+version = "Cn0PkfKe"

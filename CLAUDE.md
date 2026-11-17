@@ -21,13 +21,13 @@ Commit pack changes here, inside `TBS-client/`.
 ## The hard constraint: client-side-only
 
 Every mod in this pack must be **client-side-only and safe against a vanilla server** — it
-must run when the player connects to a stock vanilla 26.2 server (which TBS's base server
+must run when the player connects to a stock vanilla 26.3 server (which TBS's base server
 effectively is). Concretely:
 
 - No content mods, no worldgen/structure/mob mods, no mod that needs a server companion.
 - The `side` field in each `.pw.toml` should be `client` for every mod **except
-  StreamCraft Live and SlashRails**, which are `side = "both"` — the two mods shared with
-  TBS-Server.
+  StreamCraft Live, SlashRails and Voxy WorldGen** (since 2.1.0), which are `side = "both"` —
+  the mods shared with TBS-Server.
 - Before adding any mod, confirm it is client-only. See the exclusion lists in
   `docs/TBS-mod-strategy.md`.
 
@@ -43,7 +43,7 @@ Mods follow a five-tier scheme (Foundation → Visual range/quality → Camera/c
 animations → HUD/UI/utility → Cross-side). The tiers are documentation only — they live in
 `README.md` and `CHANGELOG.md`, not in the pack metadata. `mods/` is a flat directory.
 
-Mods with no 26.2 build yet are tracked under "Pending mods" in `README.md` and
+Mods with no 26.3 build yet are tracked under "Pending mods" in `README.md` and
 "Not yet included" in `CHANGELOG.md` — add them when builds appear, don't silently drop them.
 
 ## Commands
@@ -67,7 +67,7 @@ stale-swap guard). See `PUBLISHING.md`.
 
 `index.toml` tracks `README.md`, `CHANGELOG.md`, and `docs/` alongside the `.pw.toml`
 files — so editing any of those by hand requires a `refresh` afterward to fix the index
-and `pack.toml` hashes. The pack targets MC 26.2 (since 2.0.0); only mods tagged for 26.2 are
+and `pack.toml` hashes. The pack targets MC 26.3 (since 2.1.0); only mods tagged for 26.3 are
 safe to assume work.
 
 ## Adding or changing a mod — full checklist
@@ -94,7 +94,7 @@ delete its `.pw.toml`, `mr install` it — so the `.mrpack` can embed it by URL.
   **Distant Horizons** (`scripts/cf-extra/mods/distant-horizons.pw.toml`), because Voxy isn't on
   CurseForge. Never ship both in one build.
 - **CurseForge leaves out** (`CURSEFORGE_EXCLUDED` in `scripts/publish.py`): Voxy, Fresh
-  Animations and its add-ons, and resource packs with no 26.2 file on CurseForge.
+  Animations and its add-ons, and resource packs with no 26.3 file on CurseForge.
 - **Every CurseForge swap must be the Prism build's exact file** (and the server's exact file for
   cross-side mods); `publish.py` refuses stale, orphan or server-mismatched swaps.
 

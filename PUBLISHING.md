@@ -351,7 +351,7 @@ The pack's home server is **The Block Survival**, a vanilla-friendly 26.2 surviv
 A fresh install starts dialed in:
 
 - **Complementary Shaders – Reimagined** is on, with **BSL** included as a lighter alternative. You can switch either off in the shader menu.
-- **Resource packs on by default:** Vanilla Tweaks, Dramatic Skys custom skies, 3D lanterns, rails and ladders, the Unique Dark GUI, Icons, and Gentler Weather Sounds.
+- **Resource packs on by default:** Vanilla Tweaks, 3D lanterns, rails and ladders, the Unique Dark GUI, Icons, and Gentler Weather Sounds.
 - **Patrix 32x** (labPBR) is included but off by default; turn it on in Resource Packs.
 - **OpenGL** is the graphics backend. 26.2's Vulkan mode crashes with shaders.
 

@@ -1,0 +1,13 @@
+name = "Atmosfera"
+filename = "atmosfera-2.7.4+mc26.3.jar"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/28G1xpgF/versions/IeHKXvSZ/atmosfera-2.7.4%2Bmc26.3.jar"
+hash-format = "sha512"
+hash = "72b98a57ea36f74a97cd8a7ec3478514208ce5de971caff1225e0460fd54d13063893c2499d5bf0e3c35de15ec14c98f9d71a13b7a038af07c7753ef9862ae38"
+
+[update]
+[update.modrinth]
+mod-id = "28G1xpgF"
+version = "IeHKXvSZ"

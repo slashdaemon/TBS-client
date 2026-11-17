@@ -1,0 +1,13 @@
+name = "Voxy WorldGen"
+filename = "voxygen-26.3-3.0.0.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/xT0lnNE9/versions/FZLopf8z/voxygen-26.3-3.0.0.jar"
+hash-format = "sha512"
+hash = "4efa9466f7d882eef478a6aad6fbf352fb1e1f5b112abef52cad7bbb85056a6e0fcbe73d24150f9490cc321b0990b2d24c10352948b50058dd09faf07fd135ed"
+
+[update]
+[update.modrinth]
+mod-id = "xT0lnNE9"
+version = "FZLopf8z"

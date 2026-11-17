@@ -1,13 +1,13 @@
 name = "AppleSkin"
-filename = "appleskin-fabric-mc26.2-3.0.10.jar"
+filename = "appleskin-fabric-mc26.3-3.0.10.jar"
 side = "client"
 
 [download]
 hash-format = "sha1"
-hash = "03a635bae2c5a5e66825a35ff130242752054b32"
+hash = "3d19e40c5f97186857db98e622c01c2cd0030497"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 8271985
+file-id = 8907912
 project-id = 248787

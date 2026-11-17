@@ -1,13 +1,13 @@
 name = "Open Parties and Claims"
-filename = "open-parties-and-claims-fabric-26.2-0.31.6.jar"
+filename = "open-parties-and-claims-fabric-26.3-0.33.0.jar"
 side = "client"
 
 [download]
 hash-format = "sha1"
-hash = "037a58b86fe1599dd221e7ee973a6022a5106093"
+hash = "190876f04783118573ad6808ff868ac6576f279d"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 8848901
+file-id = 9222176
 project-id = 636608

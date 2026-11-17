@@ -1,16 +1,16 @@
 name = "Patrix 32x"
-filename = "Patrix_26.2_32x_basic.zip"
+filename = "Patrix_26.3_32x_basic.zip"
 side = "client"
 
 [download]
-url = "https://cdn.modrinth.com/data/olO1TaXd/versions/226vxy35/Patrix_26.2_32x_basic.zip"
+url = "https://cdn.modrinth.com/data/olO1TaXd/versions/V9k0Ak3w/Patrix_26.3_32x_basic.zip"
 hash-format = "sha512"
-hash = "bab0dafd003c63b388f4090790b5dcabf2e6d6dfda63268fb5e8f2f582e93ae669b8a88e4a47fd97e7426127c7832afe2d8b991ae7ac8e75ed70f5cc5b51d5b9"
+hash = "ad03f836285a0a894b0ed5d64ee3c910a67dd63c743e44f6f4330d32223dbff27795f7773d6ea6fb283591b489770822f796ce9184ac3f69663dc5a0cf4d0352"
 
 [update]
 [update.modrinth]
 mod-id = "olO1TaXd"
-version = "226vxy35"
+version = "V9k0Ak3w"
 
 [option]
 optional = true

@@ -1,0 +1,43 @@
+{
+  "Hotkeys": {
+    "addSelectionBox": {
+      "keys": "BACKSLASH,A"
+    },
+    "layerModeNext": {
+      "keys": "BACKSLASH,PAGE_UP"
+    },
+    "layerModePrevious": {
+      "keys": "BACKSLASH,PAGE_DOWN"
+    },
+    "openGuiMainMenu": {
+      "keys": "BACKSLASH"
+    },
+    "openGuiMaterialList": {
+      "keys": "BACKSLASH,L"
+    },
+    "openGuiSchematicPlacements": {
+      "keys": "BACKSLASH,P"
+    },
+    "openGuiSchematicVerifier": {
+      "keys": "BACKSLASH,V"
+    },
+    "openGuiSelectionManager": {
+      "keys": "BACKSLASH,S"
+    },
+    "openGuiSettings": {
+      "keys": "BACKSLASH,C"
+    },
+    "pickBlockToggle": {
+      "keys": "BACKSLASH,BUTTON_3"
+    },
+    "toggleAllRendering": {
+      "keys": "BACKSLASH,R"
+    },
+    "toggleSchematicRendering": {
+      "keys": "BACKSLASH,G"
+    },
+    "toolEnabledToggle": {
+      "keys": "BACKSLASH,T"
+    }
+  }
+}

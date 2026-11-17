@@ -2,6 +2,64 @@
 
 All notable changes to the TheBlockSurvival client modpack (formerly TBS-Client).
 
+## [2.1.0] — 2026-11-16
+
+**Minecraft 26.3, Voxy WorldGen on the client, plus 54 new client-only mods, resource packs and
+shaders.** Released in lockstep with TBS-Server 2.1.0, which moves the server to 26.3 so current
+Bedrock clients can join through Geyser 2.12.
+
+- **Minecraft 26.2 → 26.3, Fabric Loader 0.19.5 → 0.20.1.** Every mod moved to its 26.3 build.
+  StreamCraft Live 0.34.1+mc26.3 and SlashRails 0.3.0+mc26.3 match the server's files; the four
+  per-OS StreamCraft overlays and the CurseForge swaps moved with them, and the CurseForge build's
+  Distant Horizons is 3.3.4. Text Placeholder API has no 26.3 file on CurseForge, so the CurseForge
+  build bundles it.
+- **Kept on their 26.2 files** (no 26.3 file yet; resource packs and shaders load across
+  versions): AL's Creepers / Skeletons / Enderman Revamped, Armory, Health Bars, Mushrooms and
+  Pumpkins Reforged, Motschen's Better Leaves, ARTShade, Modern PSX.
+
+- **Voxy WorldGen 3.0.0** (Modrinth `xT0lnNE9`), new, `side = "both"`. This is the server's exact
+  file. Before this, the client only had Voxy, so far terrain was limited to chunks you had already
+  received (the server sends 10). With the client half installed, the server can stream LOD data
+  from what it has pre-generated. It has to stay the same version as TBS-Server. It is left out of
+  the CurseForge build along with Voxy.
+- **Performance and fixes:** Sodium Extra 0.9.6-beta.4,
+  Reese's Sodium Options, More Culling, Remove Reloading Screen, FastQuit, Language
+  Reload, Debugify, Sodium Shadowy Path Blocks.
+- **Visuals:** LambDynamicLights, Better Clouds, BetterGrassify, Windy, Polytone, Skyboxify,
+  OptiGUI, Puzzle, Euphoria Patches (for Complementary).
+- **Audio:** Atmosfera.
+- **Dropped Dynamic FPS** from the draft. With its defaults it cut the game to 10 fps after five
+  minutes without mouse or keyboard input, and to 1 fps whenever another window had focus, so
+  campfires and StreamCraft displays froze while someone watched a stream or played from a
+  controller, until the mouse moved.
+- **Removed Dramatic Skys, Nuit and Nuit Interop.** Dramatic Skys blanked the vanilla cloud
+  texture and drew its own skyboxes alongside Better Clouds' 3D clouds, so two cloud/sky systems
+  were stacked. Better Clouds stays. Nuit and Nuit Interop (both beta) were only there for
+  Dramatic Skys.
+- **HUD, UI, controls:** Better Mount HUD, Locator Heads, More Chat History, Mouse Tweaks, Client
+  Sort, Accurate Block Placement Reborn, FOVU, Picture Mode, Cubes Without Borders, Controlify.
+- **Recording and building:** Flashback + Flashback Extras, ReplayMod, Litematica + MaLiLib.
+- **Resource packs (off by default):** Motschen's Better Leaves, Mickey Joe's Flowers, Os'
+  Colorful Grasses, Mushrooms / Pumpkins / Armory / Health Bars Reforged, Overlays, Unobtrusive
+  Weather, SPBR, Theone's Eating Animation Pack, Invisible Armor Model.
+- **Shaders (alternatives, Complementary Reimagined stays the default):** Complementary Unbound,
+  Alpha Piscium, Mello, I Like Vanilla, ARTShade, Miniature, Modern PSX.
+- **Default keybinds:** Picture Mode and ReplayMod's marker both defaulted to **M**, StreamCraft's
+  mic toggle. Picture Mode now opens on **F8** and the ReplayMod marker starts unbound. Like every
+  seeded default, this only applies on a fresh install.
+- **Litematica** used **M** as its hotkey prefix (M opens its menu; M+A, M+C, M+G, M+P and so on
+  run its tools), so every Litematica shortcut also toggled the StreamCraft mic. The prefix is
+  now **Backslash** (`\` opens the menu, `\`+C settings, `\`+G toggles schematic rendering, …),
+  seeded through Default Options (`extra/config/litematica.json`), fresh install only.
+- Client Sort, Controlify and Debugify are tagged `side = "client"`. Each has an optional server
+  half that TBS doesn't run.
+- Static dependency check of all 273 mods (including bundled jars) against MC 26.2 and
+  Fabric Loader 0.19.5: no missing dependencies, version mismatches or declared breaks.
+- Sourced from a review of the *YouShouldFightTheWind* pack (1.21.11). Its server-side,
+  voice-chat and overlapping mods were left out, and so was everything with no 26.2 build
+  (MixinTrace, Fabrishot, Animatica, Big Sign Writer, Wisp, Compact Font, Fat Cat, Refined Dogs,
+  Better Dogs, Tools Reforged, Trident Reforged, the Rappenem AppleSkin addon).
+
 ## [2.0.1] — 2026-10-12
 
 **StreamCraft Live 0.28.6 → 0.29.3**, a security release. Lockstep with TBS-Server 2.0.1 —

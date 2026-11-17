@@ -139,14 +139,15 @@ def variant_suffix(variant: str) -> str:
 #    Paths relative to the pack root.
 CURSEFORGE_EXCLUDED = [
     "mods/voxy.pw.toml",                                 # not on CurseForge (Modrinth-only)
-    "resourcepacks/fresh-animations.pw.toml",            # no 26.2-tagged file on CurseForge
+    "mods/voxy-worldgen.pw.toml",                        # useless without Voxy; must match the server jar
+    "resourcepacks/fresh-animations.pw.toml",            # no 26.3-tagged file on CurseForge
     "resourcepacks/fresh-animations-extensions.pw.toml", # rides with main FA
-    # Fresh Animations add-ons: useless without FA (and not all on CurseForge for 26.2)
+    # Fresh Animations add-ons: useless without FA (and not all on CurseForge for 26.3)
     "resourcepacks/fresh-skeleton-physics.pw.toml",
     "resourcepacks/fa-player-extension.pw.toml",
     "resourcepacks/als-skeletons-revamped-x-fresh-animations.pw.toml",
     "resourcepacks/als-enderman-revamped-x-fresh-animations.pw.toml",
-    # Not on CurseForge for 26.2, and we may not bundle them
+    # Not on CurseForge for 26.3, and we may not bundle them
     "resourcepacks/als-creepers-revamped.pw.toml",
     "resourcepacks/clearer-slot-highlight.pw.toml",
     "resourcepacks/glowing-glints.pw.toml",              # Enchantment Outlines
@@ -200,13 +201,13 @@ CURSEFORGE_EXCLUSION_NOTE = (
     "\n\n---\n"
     "### Not in the CurseForge build\n"
     "A few things in the Prism build of this pack aren't on CurseForge "
-    "for 26.2, so the CurseForge package leaves them out:\n\n"
+    "for 26.3, so the CurseForge package leaves them out:\n\n"
     "- **Voxy** (far render distance) — not on CurseForge. The CurseForge build ships "
     "**Distant Horizons** for far terrain instead.\n"
     "- **Fresh Animations** and its add-ons (Fresh Skeleton Physics, FA: Player "
-    "Extension, AL's Skeletons / Enderman Revamped) — no 26.2 file on CurseForge yet.\n"
+    "Extension, AL's Skeletons / Enderman Revamped) — no 26.3 file on CurseForge yet.\n"
     "- **AL's Creepers Revamped**, **Clearer Slot Highlight**, **Enchantment Outlines** "
-    "and **MB-3D Items** — not on CurseForge for 26.2.\n\n"
+    "and **MB-3D Items** — not on CurseForge for 26.3.\n\n"
     "### About the macOS / Linux downloads\n"
     "The Windows file is the primary download and references every mod through "
     "`manifest.json`. The macOS and Linux companion files are identical except for "

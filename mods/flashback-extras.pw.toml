@@ -1,0 +1,13 @@
+name = "Flashback Extras"
+filename = "flashback-extras-1.3.3-MC26.3.x.jar"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/SEEukT7F/versions/Wket1kdX/flashback-extras-1.3.3-MC26.3.x.jar"
+hash-format = "sha512"
+hash = "1e63e072e9245d712558bbfd1b1926f61f2712970e21f00522005fa787ce639442983096935a0f5c880930fb9940fd9da999a34c906313acdfffcefc45bf25c1"
+
+[update]
+[update.modrinth]
+mod-id = "SEEukT7F"
+version = "Wket1kdX"

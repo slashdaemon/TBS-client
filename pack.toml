@@ -1,16 +1,16 @@
 name = "TheBlockSurvival"
 author = "Slash"
-version = "2.0.1"
+version = "2.1.0"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "6805c6ae370172af8b228c8d1b7dbaa8b88899f126fbb5c0b6eea3c9bfdf82ad"
+hash = "831b3807dabfe40bb777adfa55a05dd8591d21437e778e983bf721cc98c54718"
 
 [versions]
-fabric = "0.19.5"
-minecraft = "26.2"
+fabric = "0.20.1"
+minecraft = "26.3"
 
 [options]
 acceptable-game-versions = ["26.2.0"]

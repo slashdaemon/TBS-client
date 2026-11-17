@@ -1,0 +1,13 @@
+name = "Mello"
+filename = "Mello 0.734.zip"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/EJ1dyMxD/versions/IzIIAzwV/Mello%200.734.zip"
+hash-format = "sha512"
+hash = "0cba621ed5789aed534cd75b6f0cdc08b95d90a46e36b67475750ab2268cdc3934fbb7926ec52ec226918dedbbcf6a8e7e6d0a23b1c67b8e0b948b0612dba6b3"
+
+[update]
+[update.modrinth]
+mod-id = "EJ1dyMxD"
+version = "IzIIAzwV"
